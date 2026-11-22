@@ -1,0 +1,19 @@
+{
+  "id": "sn-pgdas-full-precision-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "55",
+  "CRT": "1",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "98765.43",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "2.3591234567890123456789012345",
+      "pIBSSN": "0.0259876543210987654321098765"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "body": {
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/api/calculadora/observabilidade/erros?codigo=REG-011",
+            "title": "NCM não vinculada",
+            "code": "REG-011",
+            "pointer": "#/itens/0/ncm",
+            "detail": "NCM de código 02013000 não vinculada à Classificação Tributária de código 200035 (CBS e IBS)"
+          }
+        ]
+      }
+    ]
+  }
+}

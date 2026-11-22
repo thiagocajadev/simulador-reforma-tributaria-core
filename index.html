@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playground do core: Simulador da Reforma Tributária</title>
+    <link rel="stylesheet" href="/playground/playground.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Simulador da Reforma Tributária: playground do core</h1>
+        <p>
+          Uma página local, só para desenvolvimento: calcula CBS, IBS e IS pela API deste
+          repositório, gera a NF-e ou a NFS-e simulada e valida o XML contra o XSD oficial. Dados
+          fictícios, sem valor fiscal; não é um serviço da Receita Federal. A descrição da API está
+          em <a href="/api/openapi.json">/api/openapi.json</a>.
+        </p>
+      </header>
+
+      <section aria-labelledby="operation-title">
+        <h2 id="operation-title">1. Operação</h2>
+        <label for="demo-select">Operação de demonstração</label>
+        <select id="demo-select"></select>
+        <label for="operation-json">Pedido enviado a <code>POST /api/calculations</code> (JSON, editável)</label>
+        <textarea id="operation-json" rows="18" spellcheck="false"></textarea>
+        <p class="hint">
+          O município e a descrição dos itens que a nota imprime vêm da demonstração escolhida.
+        </p>
+        <button id="calculate-button" type="button">Calcular</button>
+        <p id="calculation-status" class="status" role="status"></p>
+      </section>
+
+      <section id="result-section" aria-labelledby="result-title" hidden>
+        <h2 id="result-title">2. Resultado</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Situação</th>
+                <th scope="col">Base</th>
+                <th scope="col">Tributos</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="result-rows"></tbody>
+          </table>
+        </div>
+        <p id="result-totals"></p>
+        <details>
+          <summary>Resposta completa (JSON)</summary>
+          <pre id="result-json"></pre>
+        </details>
+      </section>
+
+      <section id="note-section" aria-labelledby="note-title" hidden>
+        <h2 id="note-title">3. Nota fiscal</h2>
+        <p id="note-status" class="status"></p>
+        <div class="actions">
+          <button id="xml-button" type="button">Baixar XML</button>
+          <button id="pdf-button" type="button">Baixar PDF</button>
+          <button id="validate-button" type="button">Validar XML</button>
+        </div>
+        <p id="validation-status" class="status" role="status"></p>
+        <details>
+          <summary>XML gerado</summary>
+          <pre id="note-xml"></pre>
+        </details>
+      </section>
+
+      <section aria-labelledby="upload-title">
+        <h2 id="upload-title">4. Validar um XML seu</h2>
+        <label for="upload-input">Arquivo de NF-e ou NFS-e (fica no navegador, não é enviado)</label>
+        <input id="upload-input" type="file" accept=".xml,application/xml,text/xml" />
+        <p id="upload-status" class="status" role="status"></p>
+      </section>
+    </main>
+    <script type="module" src="/playground/playground.main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+[submodule "upstream/calculadora-rtc-regime-regular"]
+	path = upstream/calculadora-rtc-regime-regular
+	url = https://github.com/ReceitaFederal/calculadora-rtc-regime-regular.git
+	ignore = untracked
+[submodule "upstream/calculadora-rtc-simples-nacional"]
+	path = upstream/calculadora-rtc-simples-nacional
+	url = https://github.com/ReceitaFederal/calculadora-rtc-simples-nacional.git
+	ignore = untracked
+[submodule "upstream/calculadora-rtc-gerador-danfse"]
+	path = upstream/calculadora-rtc-gerador-danfse
+	url = https://github.com/ReceitaFederal/calculadora-rtc-gerador-danfse.git
+	ignore = untracked

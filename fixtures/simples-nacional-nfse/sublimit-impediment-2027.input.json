@@ -1,0 +1,48 @@
+{
+  "id": "sn-nfse-sublimit-impediment-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "91",
+  "opSimpNac": "3",
+  "regApIBSCBSSN": "2",
+  "regApTribSN": "2",
+  "aliquotasEfetivas": {
+    "fatorR": false,
+    "impedimentoSublimite": true,
+    "anexoI": {
+      "pCBSSN": "1.1612"
+    },
+    "anexoII": {
+      "pCBSSN": "1.2843"
+    },
+    "anexoIII": {
+      "pCBSSN": "2.3874",
+      "semRedistribuicaoISS": {
+        "pCBSSN": "2.1012"
+      }
+    },
+    "anexoIV": {
+      "pCBSSN": "1.9530",
+      "semRedistribuicaoISS": {
+        "pCBSSN": "1.7764"
+      }
+    },
+    "anexoV": {
+      "pCBSSN": "2.7210",
+      "semRedistribuicaoISS": {
+        "pCBSSN": "2.4448"
+      }
+    }
+  },
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "07",
+      "cClassTrib": "000001",
+      "nbs": "115062100",
+      "baseCalculo": "22000.00",
+      "tribISSQN": "1",
+      "tpRetISSQN": "1"
+    }
+  ]
+}

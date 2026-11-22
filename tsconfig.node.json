@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "types": ["node"]
+  },
+  "include": [
+    "vite.config.ts",
+    "vitest.config.ts",
+    "scripts/**/*.ts",
+    "src/**/*.test.ts",
+    "src/shared/testing/vitest.provided.d.ts",
+    "src/shared/xml/xml.raw.d.ts"
+  ],
+  "exclude": [
+    "src/features/*/*.route.test.ts",
+    "src/features/*/*.compose.test.ts",
+    "src/worker/**/*.test.ts",
+    "src/features/*/*.d1.test.ts",
+    "src/**/*.dom.test.ts"
+  ]
+}

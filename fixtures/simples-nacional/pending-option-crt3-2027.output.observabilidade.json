@@ -1,0 +1,71 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "55",
+      "CRT": "3",
+      "tpRegimeIBSCBS": "2"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "1000.00",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.00",
+          "vIBSPendSusp": "0.26",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "0.00",
+          "vCBSPendSusp": "23.59",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.00",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 1.000,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.000,00, com alíquota efetiva de 2,3591%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 23,59.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 1.000,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.000,00, com alíquota efetiva de 0,026%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,26."
+          }
+        }
+      },
+      {
+        "nObj": 2,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "500.00",
+          "tpRBSN": 4,
+          "tpRBSNDescricao": "Receita bruta - exportação indireta",
+          "vBC": "500.00",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.00",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "0.00",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.00",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 500,00 (Receita bruta - exportação indireta). A base de cálculo utilizada é de R$ 500,00, com alíquota efetiva de 2,3591%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 500,00 (Receita bruta - exportação indireta). A base de cálculo utilizada é de R$ 500,00, com alíquota efetiva de 0,026%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "1500.00",
+      "vBC": "1500.00",
+      "vIBSSNtot": "0.00",
+      "vIBSSNtotPendSusp": "0.26",
+      "vCBSSNtot": "0.00",
+      "vCBSSNtotPendSusp": "23.59",
+      "totalIs": "0.00",
+      "totalTributos": "0.00"
+    }
+  }
+}

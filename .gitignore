@@ -1,0 +1,20 @@
+# Environment: never commit secrets
+.env
+.env.*
+!.env.example
+
+# Build and local runtime
+node_modules/
+dist/
+.wrangler/
+*.tsbuildinfo
+.data/
+
+# Claude Code harness state (launch configs, local settings)
+.claude/
+
+# Certificates and private keys (an ICP-Brasil A1 is a .pfx or .p12): never in the repository
+*.pfx
+*.p12
+*.pem
+*.key

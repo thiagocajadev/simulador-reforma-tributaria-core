@@ -1,0 +1,57 @@
+{
+  "id": "sn-nfse-construction-municipal-exemption-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "91",
+  "opSimpNac": "3",
+  "regApIBSCBSSN": "1",
+  "regApTribSN": "1",
+  "aliquotasEfetivas": {
+    "fatorR": false,
+    "impedimentoSublimite": false,
+    "anexoI": {
+      "pCBSSN": "1.1612",
+      "pIBSSN": "0.0129"
+    },
+    "anexoII": {
+      "pCBSSN": "1.2843",
+      "pIBSSN": "0.0141"
+    },
+    "anexoIII": {
+      "pCBSSN": "2.3874",
+      "pIBSSN": "0.0263",
+      "semRedistribuicaoISS": {
+        "pCBSSN": "2.1012",
+        "pIBSSN": "0.0231"
+      }
+    },
+    "anexoIV": {
+      "pCBSSN": "1.9530",
+      "pIBSSN": "0.0215",
+      "semRedistribuicaoISS": {
+        "pCBSSN": "1.7764",
+        "pIBSSN": "0.0196"
+      }
+    },
+    "anexoV": {
+      "pCBSSN": "2.7210",
+      "pIBSSN": "0.0300",
+      "semRedistribuicaoISS": {
+        "pCBSSN": "2.4448",
+        "pIBSSN": "0.0269"
+      }
+    }
+  },
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "13",
+      "cClassTrib": "000001",
+      "nbs": "101011100",
+      "baseCalculo": "85000.00",
+      "tribISSQN": "1",
+      "tpRetISSQN": "1",
+      "tpBM": "1"
+    }
+  ]
+}

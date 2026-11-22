@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "body": {
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/api/calculadora/observabilidade/erros?codigo=REG-013",
+            "title": "Dados do Imposto Seletivo não informados",
+            "code": "REG-013",
+            "pointer": "#/itens/0/impostoSeletivo",
+            "detail": "Dados do Imposto Seletivo devem ser informados para NCM 24021000 e data 2027-03-10"
+          }
+        ]
+      }
+    ]
+  }
+}

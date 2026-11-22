@@ -1,0 +1,111 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "55",
+      "CRT": "1"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "1000.00",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.26",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "23.59",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "23.85",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 1.000,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.000,00, com alíquota efetiva de 2,3591%. Valor devido de R$ 23,59 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 1.000,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.000,00, com alíquota efetiva de 0,026%. Valor devido de R$ 0,26 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 2,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-004",
+            "title": "Alíquota pCBSSN ausente",
+            "code": "VSN-004",
+            "pointer": "#/itens/1/pCBSSN",
+            "detail": "A alíquota é exigida para o cálculo do item e não foi informada."
+          }
+        ]
+      },
+      {
+        "nObj": 3,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-007",
+            "title": "Alíquota pIBSSN inválida (negativa/fora do formato)",
+            "code": "VSN-007",
+            "pointer": "#/itens/2/pIBSSN",
+            "detail": "O valor não é um número decimal válido, recebido: '2,5'. Informe até 3 dígitos inteiros e até 34 casas decimais, sem notação científica (ex.: 1.6839)."
+          }
+        ]
+      },
+      {
+        "nObj": 4,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-023",
+            "title": "Código de Atividade do Simples Nacional incompatível com cClassTrib",
+            "code": "VSN-023",
+            "pointer": "#/itens/3/cAtivSN",
+            "detail": "O código de atividade '90' (Operações não Tributáveis) é incompatível com cClassTrib de tpRBSN=1."
+          }
+        ]
+      },
+      {
+        "nObj": 5,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-047",
+            "title": "NCM não aplicável",
+            "code": "VSN-047",
+            "pointer": "#/itens/4/ncm",
+            "detail": "NCM de código 22030000 não vinculada à Classificação Tributária de código 200003 (CBS e IBS)"
+          }
+        ]
+      },
+      {
+        "nObj": 6,
+        "estadoItem": "NAO_IMPLEMENTADO",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-027",
+            "title": "cClassTrib sem tratamento implementado no cálculo do Simples Nacional",
+            "code": "VSN-027",
+            "pointer": "#/itens/5/cClassTrib",
+            "detail": "A classificação tributária '620001' ainda não possui tratamento implementado no cálculo do Simples Nacional na data '2027-03-10'. Essa funcionalidade está prevista no roadmap e será disponibilizada em versão futura."
+          }
+        ]
+      }
+    ],
+    "total": {
+      "vRBSNtot": "1000.00",
+      "vBC": "1000.00",
+      "vIBSSNtot": "0.26",
+      "vIBSSNtotPendSusp": "0.00",
+      "vCBSSNtot": "23.59",
+      "vCBSSNtotPendSusp": "0.00",
+      "totalIs": "0.00",
+      "totalTributos": "23.85"
+    }
+  }
+}

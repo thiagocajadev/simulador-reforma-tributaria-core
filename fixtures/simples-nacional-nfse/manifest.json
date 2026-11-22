@@ -1,0 +1,70 @@
+{
+  "upstream": "calculadora-rtc-simples-nacional",
+  "applicationVersion": "1.0.2",
+  "databaseVersion": "V0073",
+  "endpoints": {
+    "nao-assistido": "/observabilidade/simples-nacional/nao-assistido"
+  },
+  "cases": {
+    "accounting-fixed-iss-2027": {
+      "nao-assistido": 200
+    },
+    "construction-municipal-exemption-2027": {
+      "nao-assistido": 200
+    },
+    "consulting-annex-iii-2027": {
+      "nao-assistido": 200
+    },
+    "error-crt-on-nfse-2027": {
+      "nao-assistido": 422
+    },
+    "error-invalid-rate-text-2027": {
+      "nao-assistido": 422
+    },
+    "error-iss-fields-2027": {
+      "nao-assistido": 200
+    },
+    "error-mei-2027": {
+      "nao-assistido": 422
+    },
+    "error-missing-effective-rates-2027": {
+      "nao-assistido": 422
+    },
+    "error-missing-fator-r-2027": {
+      "nao-assistido": 200
+    },
+    "error-not-opting-2027": {
+      "nao-assistido": 422
+    },
+    "error-two-items-2027": {
+      "nao-assistido": 422
+    },
+    "fator-r-annex-iii-2027": {
+      "nao-assistido": 200
+    },
+    "fator-r-annex-v-2027": {
+      "nao-assistido": 200
+    },
+    "government-purchase-union-rounding-2027": {
+      "nao-assistido": 200
+    },
+    "iss-immunity-without-pair-2027": {
+      "nao-assistido": 200
+    },
+    "iss-outside-simples-2027": {
+      "nao-assistido": 200
+    },
+    "iss-withheld-by-buyer-2027": {
+      "nao-assistido": 200
+    },
+    "pending-option-2027": {
+      "nao-assistido": 200
+    },
+    "revenue-only-regime-2027": {
+      "nao-assistido": 200
+    },
+    "sublimit-impediment-2027": {
+      "nao-assistido": 200
+    }
+  }
+}

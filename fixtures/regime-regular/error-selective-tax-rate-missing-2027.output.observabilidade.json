@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "body": {
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/api/calculadora/observabilidade/erros?codigo=REG-035",
+            "title": "Alíquota do Imposto Seletivo não informada",
+            "code": "REG-035",
+            "pointer": "#/itens/0/aliquotasNominais/impostoSeletivo",
+            "detail": "A alíquota do Imposto Seletivo deve ser informada em aliquotasNominais.impostoSeletivo para NCM 24021000 e data 2027-03-10, pois ainda não foi definida em lei"
+          }
+        ]
+      }
+    ]
+  }
+}

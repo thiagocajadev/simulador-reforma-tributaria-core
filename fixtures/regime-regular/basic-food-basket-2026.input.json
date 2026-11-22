@@ -1,0 +1,11 @@
+{
+  "id": "fixture-basic-food-basket-2026",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2026-03-10T10:00:00-03:00",
+  "municipio": 4314902,
+  "uf": "RS",
+  "tpDoc": 55,
+  "itens": [
+    { "numero": 1, "ncm": "10063021", "cst": "200", "cClassTrib": "200003", "baseCalculo": 100.00, "quantidade": 20, "unidade": "KG" }
+  ]
+}

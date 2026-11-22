@@ -1,0 +1,91 @@
+{
+  "upstream": "calculadora-rtc-regime-regular",
+  "applicationVersion": "1.7.2",
+  "databaseVersion": "V0073",
+  "endpoints": {
+    "regime-geral": "/regime-geral",
+    "observabilidade": "/observabilidade/regime-geral"
+  },
+  "cases": {
+    "basic-food-basket-2026": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "education-service-60pct-2026": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "education-service-60pct-2027-nominal": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "error-ncm-not-linked-2026": {
+      "regime-geral": 422,
+      "observabilidade": 200
+    },
+    "error-nominal-rates-before-2027": {
+      "regime-geral": 422,
+      "observabilidade": 200
+    },
+    "error-nominal-rates-missing-2027": {
+      "regime-geral": 422,
+      "observabilidade": 200
+    },
+    "error-selective-tax-ad-rem-quantity-2027": {
+      "regime-geral": 422,
+      "observabilidade": 200
+    },
+    "error-selective-tax-missing-2027": {
+      "regime-geral": 422,
+      "observabilidade": 200
+    },
+    "error-selective-tax-rate-missing-2027": {
+      "regime-geral": 422,
+      "observabilidade": 200
+    },
+    "full-rate-goods-2026": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "full-rate-goods-2027-nominal": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "multi-item-2026": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "rounding-half-even-2026": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "selective-tax-cigars-2027": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "selective-tax-multi-item-2027": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "selective-tax-no-calculation-2027": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "selective-tax-single-rounding-2027": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "selective-tax-vehicle-2028": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "upstream-rounding-t1": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    },
+    "upstream-rounding-t4": {
+      "regime-geral": 200,
+      "observabilidade": 200
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fixture-multi-item-2026",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2026-06-15T14:30:00-03:00",
+  "municipio": 3550308,
+  "uf": "SP",
+  "tpDoc": 55,
+  "itens": [
+    { "numero": 1, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 3499.90, "quantidade": 1, "unidade": "UN" },
+    { "numero": 2, "ncm": "10063021", "cst": "200", "cClassTrib": "200003", "baseCalculo": 57.35, "quantidade": 5, "unidade": "KG" },
+    { "numero": 3, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 0.99, "quantidade": 3, "unidade": "UN" }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "55",
+      "CRT": "1"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "25.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "25.00",
+          "pIBSSN": "0.10",
+          "vIBSSN": "0.02",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "0.10",
+          "vCBSSN": "0.02",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.04",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 25,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 25,00, com alíquota efetiva de 0,10%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 25,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 25,00, com alíquota efetiva de 0,10%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 2,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "0.50",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "0.50",
+          "pIBSSN": "1.00",
+          "vIBSSN": "0.00",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "1.00",
+          "vCBSSN": "0.00",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.00",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 0,50 (Receita bruta - interna). A base de cálculo utilizada é de R$ 0,50, com alíquota efetiva de 1,00%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 0,50 (Receita bruta - interna). A base de cálculo utilizada é de R$ 0,50, com alíquota efetiva de 1,00%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 3,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "1.50",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "1.50",
+          "pIBSSN": "1.00",
+          "vIBSSN": "0.02",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "1.00",
+          "vCBSSN": "0.02",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.04",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 1,50 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1,50, com alíquota efetiva de 1,00%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 1,50 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1,50, com alíquota efetiva de 1,00%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 4,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "2.50",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "2.50",
+          "pIBSSN": "1.00",
+          "vIBSSN": "0.02",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "1.00",
+          "vCBSSN": "0.02",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.04",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 2,50 (Receita bruta - interna). A base de cálculo utilizada é de R$ 2,50, com alíquota efetiva de 1,00%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 2,50 (Receita bruta - interna). A base de cálculo utilizada é de R$ 2,50, com alíquota efetiva de 1,00%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "29.50",
+      "vBC": "29.50",
+      "vIBSSNtot": "0.06",
+      "vIBSSNtotPendSusp": "0.00",
+      "vCBSSNtot": "0.06",
+      "vCBSSNtotPendSusp": "0.00",
+      "totalIs": "0.00",
+      "totalTributos": "0.12"
+    }
+  }
+}

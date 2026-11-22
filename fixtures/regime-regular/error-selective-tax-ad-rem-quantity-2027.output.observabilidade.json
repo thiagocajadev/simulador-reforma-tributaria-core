@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "body": {
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/api/calculadora/observabilidade/erros?codigo=REG-023",
+            "title": "Erro genérico de validação",
+            "code": "REG-023",
+            "pointer": "#/itens/0",
+            "detail": "A quantidade do Imposto Seletivo deve ser informada para alíquota ad rem"
+          }
+        ]
+      }
+    ]
+  }
+}

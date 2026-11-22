@@ -1,0 +1,11 @@
+{
+  "status": 422,
+  "body": {
+    "detail": "A alíquota do Imposto Seletivo deve ser informada em aliquotasNominais.impostoSeletivo para NCM 24021000 e data 2027-03-10, pois ainda não foi definida em lei",
+    "instance": "/api/calculadora/regime-geral",
+    "status": 422,
+    "title": "Alíquota do Imposto Seletivo não informada",
+    "type": "http://localhost/errors/aliquota-imposto-seletivo-nao-informada",
+    "timestamp": "<volatile>"
+  }
+}

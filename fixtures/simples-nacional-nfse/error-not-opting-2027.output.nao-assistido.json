@@ -1,0 +1,20 @@
+{
+  "status": 422,
+  "body": {
+    "type": "about:blank",
+    "title": "Erros no processamento do cálculo do Simples Nacional",
+    "status": 422,
+    "detail": "O cálculo contém 1 erro(s).",
+    "instance": "/api/calculadora/observabilidade/simples-nacional/nao-assistido",
+    "timestamp": "<volatile>",
+    "errors": [
+      {
+        "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-019",
+        "title": "Operação fora do escopo do cálculo do Simples Nacional",
+        "code": "VSN-019",
+        "pointer": "#/opSimpNac",
+        "detail": "Operação fora do escopo do cálculo do Simples Nacional: prestador não optante pelo Simples Nacional (opSimpNac=1)."
+      }
+    ]
+  }
+}

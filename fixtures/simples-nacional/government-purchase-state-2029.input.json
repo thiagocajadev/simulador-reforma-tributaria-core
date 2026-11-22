@@ -1,0 +1,20 @@
+{
+  "id": "sn-government-purchase-state-2029",
+  "versao": "1.0.0",
+  "data": "2029-06-10",
+  "tpDoc": "55",
+  "CRT": "1",
+  "tpEnteGov": "2",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "1000.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "1.6839379378",
+      "pIBSSN": "0.0187"
+    }
+  ]
+}

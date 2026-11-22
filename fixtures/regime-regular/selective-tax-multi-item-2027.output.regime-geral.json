@@ -1,0 +1,156 @@
+{
+  "status": 200,
+  "body": {
+    "objetos": [
+      {
+        "nObj": 1,
+        "tribCalc": {
+          "IS": {
+            "CSTIS": "000",
+            "cClassTribIS": "000001",
+            "vBCIS": "12.50",
+            "pIS": "4.20",
+            "vIS": "0.52",
+            "memoriaCalculo": "Operação de consumo sujeita à tributação pelo Imposto Seletivo, com enquadramento legal em Art. 412, I, tributada conforme Tributação pelo Imposto Seletivo - Com Cálculo. A base de cálculo utilizada é de R$ 12,50, com alíquota ad valorem de 4,20%. A alíquota ad rem é de 0,00."
+          },
+          "IBSCBS": {
+            "CST": "000",
+            "cClassTrib": "000001",
+            "gIBSCBS": {
+              "vBC": "13.02",
+              "gIBSUF": {
+                "pIBSUF": "0.05",
+                "vIBSUF": "0.01"
+              },
+              "gIBSMun": {
+                "pIBSMun": "0.05",
+                "vIBSMun": "0.01"
+              },
+              "vIBS": "0.02",
+              "gCBS": {
+                "pCBS": "8.80",
+                "vCBS": "1.15"
+              }
+            },
+            "memoriaCalculo": {
+              "cbs": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 13,02, com alíquota de 8,80%.",
+              "ibsUF": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 13,02, com alíquota de 0,05%.",
+              "ibsMun": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 13,02, com alíquota de 0,05%."
+            }
+          }
+        },
+        "calculoSimulado": true
+      },
+      {
+        "nObj": 2,
+        "tribCalc": {
+          "IS": {
+            "CSTIS": "000",
+            "cClassTribIS": "000001",
+            "vBCIS": "7.90",
+            "pIS": "2.60",
+            "vIS": "0.21",
+            "memoriaCalculo": "Operação de consumo sujeita à tributação pelo Imposto Seletivo, com enquadramento legal em Art. 412, I, tributada conforme Tributação pelo Imposto Seletivo - Com Cálculo. A base de cálculo utilizada é de R$ 7,90, com alíquota ad valorem de 2,60%. A alíquota ad rem é de 0,00."
+          },
+          "IBSCBS": {
+            "CST": "000",
+            "cClassTrib": "000001",
+            "gIBSCBS": {
+              "vBC": "8.11",
+              "gIBSUF": {
+                "pIBSUF": "0.05",
+                "vIBSUF": "0.00"
+              },
+              "gIBSMun": {
+                "pIBSMun": "0.05",
+                "vIBSMun": "0.00"
+              },
+              "vIBS": "0.00",
+              "gCBS": {
+                "pCBS": "8.80",
+                "vCBS": "0.71"
+              }
+            },
+            "memoriaCalculo": {
+              "cbs": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 8,11, com alíquota de 8,80%.",
+              "ibsUF": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 8,11, com alíquota de 0,05%.",
+              "ibsMun": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 8,11, com alíquota de 0,05%."
+            }
+          }
+        },
+        "calculoSimulado": true
+      },
+      {
+        "nObj": 3,
+        "tribCalc": {
+          "IBSCBS": {
+            "CST": "000",
+            "cClassTrib": "000001",
+            "gIBSCBS": {
+              "vBC": "1000.00",
+              "gIBSUF": {
+                "pIBSUF": "0.05",
+                "vIBSUF": "0.50"
+              },
+              "gIBSMun": {
+                "pIBSMun": "0.05",
+                "vIBSMun": "0.50"
+              },
+              "vIBS": "1.00",
+              "gCBS": {
+                "pCBS": "8.80",
+                "vCBS": "88.00"
+              }
+            },
+            "memoriaCalculo": {
+              "cbs": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 1.000,00, com alíquota de 8,80%.",
+              "ibsUF": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 1.000,00, com alíquota de 0,05%.",
+              "ibsMun": "Operação de consumo com enquadramento legal em LC 214/2025, tributada conforme Tributação integral. A base de cálculo utilizada é de R$ 1.000,00, com alíquota de 0,05%."
+            }
+          }
+        },
+        "calculoSimulado": true
+      }
+    ],
+    "total": {
+      "tribCalc": {
+        "ISTot": {
+          "vIS": "0.73"
+        },
+        "IBSCBSTot": {
+          "vBCIBSCBS": "1021.13",
+          "gIBS": {
+            "gIBSUF": {
+              "vDif": "0.00",
+              "vDevTrib": "0.00",
+              "vIBSUF": "0.51"
+            },
+            "gIBSMun": {
+              "vDif": "0.00",
+              "vDevTrib": "0.00",
+              "vIBSMun": "0.51"
+            },
+            "vIBS": "1.02",
+            "vCredPres": "0.00",
+            "vCredPresCondSus": "0.00"
+          },
+          "gCBS": {
+            "vDif": "0.00",
+            "vDevTrib": "0.00",
+            "vCBS": "89.86",
+            "vCredPres": "0.00",
+            "vCredPresCondSus": "0.00"
+          },
+          "gMono": {
+            "vIBSMono": "0.00",
+            "vCBSMono": "0.00",
+            "vIBSMonoReten": "0.00",
+            "vCBSMonoReten": "0.00",
+            "vIBSMonoRet": "0.00",
+            "vCBSMonoRet": "0.00"
+          }
+        }
+      }
+    }
+  }
+}

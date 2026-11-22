@@ -1,0 +1,11 @@
+{
+  "status": 422,
+  "body": {
+    "detail": "As alíquotas nominais não podem ser informadas para operações com fato gerador anterior a 01/01/2027, pois a calculadora resolve as alíquotas vigentes",
+    "instance": "/api/calculadora/regime-geral",
+    "status": 422,
+    "title": "Alíquotas nominais informadas indevidamente",
+    "type": "http://localhost/errors/aliquotas-nominais-informadas-indevidamente",
+    "timestamp": "<volatile>"
+  }
+}

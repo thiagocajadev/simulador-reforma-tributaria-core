@@ -1,0 +1,58 @@
+{
+  "upstream": "calculadora-rtc-simples-nacional",
+  "applicationVersion": "1.0.2",
+  "databaseVersion": "V0073",
+  "endpoints": {
+    "observabilidade": "/observabilidade/simples-nacional"
+  },
+  "cases": {
+    "activity-not-calculated-2027": {
+      "observabilidade": 200
+    },
+    "basic-food-basket-nfce-2027": {
+      "observabilidade": 200
+    },
+    "error-before-2027": {
+      "observabilidade": 422
+    },
+    "error-items-2027": {
+      "observabilidade": 200
+    },
+    "error-mei-crt4-2027": {
+      "observabilidade": 422
+    },
+    "goods-resale-2027": {
+      "observabilidade": 200
+    },
+    "government-purchase-state-2029": {
+      "observabilidade": 200
+    },
+    "government-purchase-union-2027": {
+      "observabilidade": 200
+    },
+    "indirect-export-2027": {
+      "observabilidade": 200
+    },
+    "multi-item-2027": {
+      "observabilidade": 200
+    },
+    "pending-option-crt3-2027": {
+      "observabilidade": 200
+    },
+    "pgdas-full-precision-2027": {
+      "observabilidade": 200
+    },
+    "revenue-without-tax-2027": {
+      "observabilidade": 200
+    },
+    "rounding-half-even-2027": {
+      "observabilidade": 200
+    },
+    "selective-tax-cigars-2027": {
+      "observabilidade": 200
+    },
+    "sublimit-excess-crt2-2027": {
+      "observabilidade": 200
+    }
+  }
+}

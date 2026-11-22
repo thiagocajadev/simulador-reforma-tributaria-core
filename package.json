@@ -1,0 +1,45 @@
+{
+  "name": "simulador-reforma-tributaria-core",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "24.x || 26.x"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "audit:names": "node scripts/checks/names.audit.ts",
+    "check": "tsc -b && biome check . && npm run audit:names && vitest run",
+    "cf-typegen": "wrangler types",
+    "data:build": "node scripts/open-data/open-data.build.ts",
+    "predata:load:local": "npm run data:build",
+    "data:load:local": "wrangler d1 execute OPEN_DATA --local --file .data/open-data.sql",
+    "predata:load:remote": "npm run data:build",
+    "data:load:remote": "wrangler d1 execute OPEN_DATA --remote --file .data/open-data.sql"
+  },
+  "dependencies": {
+    "hono": "^4.13.20",
+    "jspdf": "^4.2.1",
+    "qrcode": "^1.5.4",
+    "xmllint-wasm": "^5.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.8",
+    "@cloudflare/vite-plugin": "^1.70.1",
+    "@cloudflare/vitest-plugin": "^1.9.0",
+    "@types/node": "^24.19.2",
+    "@types/qrcode": "^1.5.6",
+    "happy-dom": "^21.0.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "~5.1.1",
+    "wrangler": "^4.166.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "sn-rounding-half-even-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "55",
+  "CRT": "1",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "25.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "0.1",
+      "pIBSSN": "0.1"
+    },
+    {
+      "numero": 2,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "0.50",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "1",
+      "pIBSSN": "1"
+    },
+    {
+      "numero": 3,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "1.50",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "1",
+      "pIBSSN": "1"
+    },
+    {
+      "numero": 4,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "2.50",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "1",
+      "pIBSSN": "1"
+    }
+  ]
+}

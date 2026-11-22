@@ -1,0 +1,11 @@
+{
+  "status": 422,
+  "body": {
+    "detail": "Dados do Imposto Seletivo devem ser informados para NCM 24021000 e data 2027-03-10",
+    "instance": "/api/calculadora/regime-geral",
+    "status": 422,
+    "title": "Dados do Imposto Seletivo não informados",
+    "type": "http://localhost/errors/dados-imposto-seletivo-nao-informados",
+    "timestamp": "<volatile>"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "55",
+      "CRT": "1"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "500.00",
+          "tpRBSN": 4,
+          "tpRBSNDescricao": "Receita bruta - exportação indireta",
+          "vBC": "500.00",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.00",
+          "vIBSPendSusp": "0.13",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "0.00",
+          "vCBSPendSusp": "11.80",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.00",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 500,00 (Receita bruta - exportação indireta). A base de cálculo utilizada é de R$ 500,00, com alíquota efetiva de 2,3591%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 11,80.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 500,00 (Receita bruta - exportação indireta). A base de cálculo utilizada é de R$ 500,00, com alíquota efetiva de 0,026%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,13."
+          }
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "500.00",
+      "vBC": "500.00",
+      "vIBSSNtot": "0.00",
+      "vIBSSNtotPendSusp": "0.13",
+      "vCBSSNtot": "0.00",
+      "vCBSSNtotPendSusp": "11.80",
+      "totalIs": "0.00",
+      "totalTributos": "0.00"
+    }
+  }
+}

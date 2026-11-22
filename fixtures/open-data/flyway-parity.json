@@ -1,0 +1,406 @@
+{
+  "databaseVersion": "V0073",
+  "tables": {
+    "AJUSTE": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "2d0bb5a905406d32ab9a3007decf4147f6fc6d8e926d72b95d7c12bcfde73bc6"
+    },
+    "ALIQUOTA_AD_REM": {
+      "rowCount": 2,
+      "rowsHash": "23f448ec6155dd7d1ba6c7608582f02bcd604bfec4d9774612e4a1a3a0283231",
+      "ddlHash": "cd770f1e7f9f65f83ea38757f2bf603d300b6f7f6ce81b33fd4d1f9358a1a941"
+    },
+    "ALIQUOTA_AD_REM_PRODUTO": {
+      "rowCount": 3,
+      "rowsHash": "ec67fd8a7f5b5bd32976d6521d82e2e67c34153baf5cb4155267b9dc93574e09",
+      "ddlHash": "fb90e41a5cae6753417cb0f8ebc1ad4c8c136820d591bff88d82417942d967e9"
+    },
+    "ALIQUOTA_AD_REM_SERVICO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "e3a1a9d3c918959c7580f76f170f907defbf34339954e02725d7ee75a5ea392a"
+    },
+    "ALIQUOTA_AD_VALOREM": {
+      "rowCount": 46,
+      "rowsHash": "2b4879fdf10d39bb71ed08a69810f9f133e054bc35da12f1eab3ad37c3e75f66",
+      "ddlHash": "700bbb9b7c0fbdc4928b458aecd63e4e662ac1cfbc8871349ebcb60e7544e196"
+    },
+    "ALIQUOTA_AD_VALOREM_PRODUTO": {
+      "rowCount": 331,
+      "rowsHash": "6d88414744b144451df9db4cf9bddd33ecd09749de9786ef4e52f33f51723272",
+      "ddlHash": "1eb8ea2da8b719191b47c50befff24b729428498668d1ed083a250429d33b85c"
+    },
+    "ALIQUOTA_AD_VALOREM_SERVICO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "4d18974dc61dcc08981197e47d692a526e5175a4cd49891a240085c141082f98"
+    },
+    "ALIQUOTA_PADRAO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "fd81e7cf2004c5d1fee836c33c1260773960121e007b857f9aebc8a324191555"
+    },
+    "ALIQUOTA_REFERENCIA": {
+      "rowCount": 3,
+      "rowsHash": "c0dd729ff5faac80741ab216e7df0b1d6b7cc40a96a7cf5dda80e8af3ea372c2",
+      "ddlHash": "1b146ecbd1954173a0b86a2d2fca90584fe924b9bbbf6c2182fd3bdf6719ce52"
+    },
+    "ANEXO": {
+      "rowCount": 821,
+      "rowsHash": "6918b47fb1b6ba2e185c134162f27763dc7a89eab5746c49dd2f9da9c5b7248f",
+      "ddlHash": "ccd04a42a9cf328e91eaca921bcc827b09749fdb7e857f94e61fec226248b515"
+    },
+    "APROPRIACAO_CREDITO_ADQUIRENTE": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "9b12ba887b4098682eb7dee95c95e9e325c01ab7879b3b0456c4c41962636bc2"
+    },
+    "ATIVIDADE_SIMPLES_NACIONAL": {
+      "rowCount": 15,
+      "rowsHash": "20d7a2f9ecbb0f6741a8de9dd0018f18728a3ff2950198c8da98f7737e32d832",
+      "ddlHash": "b97e4dd18b5bc2289735d95af94e3a388d374e7a35ab7bfdbafae658912ea9e3"
+    },
+    "ATOR": {
+      "rowCount": 90,
+      "rowsHash": "7abc24afa33f6fd57e68190520521ae79720344eeecf4165cce3b44d6025a1da",
+      "ddlHash": "723161b2766be0f0cb826bec8dcc2e70df9b41a4b36930709178f715787baf06"
+    },
+    "ATOR_CLASSIFICACAO": {
+      "rowCount": 146,
+      "rowsHash": "8bb275eff97b5d889152d4c4d978e3fc29a2936dafe61e03c77bd6bdd553f95f",
+      "ddlHash": "4bd141a3e2b020055ad094c660afa3cc33ae9f98a1662168cb4997a79fb7431b"
+    },
+    "ATOR_CLASSIFICACAO_FUNDAMENTACAO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "2f761d3f73f25db962e2d96098b7f5cc9456c2f3095202fdd805660049856541"
+    },
+    "CLASSIFICACAO_TRIBUTARIA": {
+      "rowCount": 202,
+      "rowsHash": "30288f6cf79b523b56d51672a22e42e08a828fd1036d096c25b53a84b3b84037",
+      "ddlHash": "4a43d65ae6849c52c60269d837e155d6a0074f8e2e0c8c056aa9e790b77c321a"
+    },
+    "CLASSIF_NBS_INDOP_LC": {
+      "rowCount": 3280,
+      "rowsHash": "9e57ada3cc15f6a5a6f0a4306fccc044058018f97b3cbb771f8e79bef0be74dc",
+      "ddlHash": "4b20a632abfb8734f77243520c770c946f8eeddab2aef8be64d28c564e6f5316"
+    },
+    "ENQUADRAMENTO_REGIME_SIMPLES_NACIONAL": {
+      "rowCount": 11,
+      "rowsHash": "c6d6e346fde72cfd228f70fb85771d44a201a136f7d279c77f1ec0a8e60c7d26",
+      "ddlHash": "7344bc787e6b8f973874247277eca1e541a61ac8a4013d46cd50a499ce56137a"
+    },
+    "EXCECAO_AD_REM_PRODUTO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "2119c3246d96344198a404e372ca557b926311f0d7e20a87f5e00793b836f2f9"
+    },
+    "EXCECAO_AD_REM_SERVICO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "2c817df6aebd3dbc336f32ab5580dec686d900a3016c3ccddca281aa25829539"
+    },
+    "EXCECAO_AD_VALOREM_PRODUTO": {
+      "rowCount": 1,
+      "rowsHash": "86221c6fd37abbd42c58fda01c01bdcd6a3ed829f02d98a2649618228b0a5e53",
+      "ddlHash": "ecc1a63607de6c5ba3f6154b8a3945f813da449b511b9c87785938663c7122d5"
+    },
+    "EXCECAO_AD_VALOREM_SERVICO": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "f16e1c71026914074e9444c94c753443cc1ac52a6db459ac4b3992c9968d9c00"
+    },
+    "EXCECAO_NBS_APLICAVEL": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "786878730387554d07f6fb934a77aa6cc67dfa3eab59ec66e786fbf624ad3996"
+    },
+    "EXCECAO_NCM_APLICAVEL": {
+      "rowCount": 75,
+      "rowsHash": "3a5241b5318384e41bc6e476df50f8024bc2648c06012e082512e1807fb2b27b",
+      "ddlHash": "0b7583774064487b4a76b1368096159f125978571058ec8316ce4b677b3823bd"
+    },
+    "FUNDAMENTACAO_CLASSIFICACAO": {
+      "rowCount": 202,
+      "rowsHash": "81d6b590f7bd4cfb138904d9726749725d209e039617e256c13dda523cbeed4c",
+      "ddlHash": "e2ccfa0147a357de3c7191571fa732edf3a704de604eb0e7928a9822d245eadf"
+    },
+    "FUNDAMENTACAO_LEGAL": {
+      "rowCount": 202,
+      "rowsHash": "a974e5084711a5ede253c76dd8716ef1c1bbe723fe7dc53f97ef1142f0ae4a19",
+      "ddlHash": "6321e8312b5f13e321b1239f40d97f6b2d508133ae30c02efbe75ba297ba350a"
+    },
+    "GRUPO_ATOR": {
+      "rowCount": 17,
+      "rowsHash": "97d91e62198218d061efb4e2dc7b94af11c38181403a6ad7a3f550e1e0f40b8b",
+      "ddlHash": "ca388b23243f0201c1540db7e0df4e72e3d8b6f724500ca01d3e27df3b563f7c"
+    },
+    "GRUPO_DFE": {
+      "rowCount": 5,
+      "rowsHash": "5b354a18477fa793ee28cdef800073697b5dfd87f63daa6cc3592975b19c4a33",
+      "ddlHash": "fb4c08ac8b49051baec6af5c4519a14d5696e992be7ed1a368dffcb3fe05eebe"
+    },
+    "INDICADOR_OPERACAO_IBS_CBS": {
+      "rowCount": 66,
+      "rowsHash": "05f1d161bcc0b76a7cfb888812a6bd6937a0cada986374e6e27146b353632412",
+      "ddlHash": "3cbb5d7b9e3bb898fc590e86eba2cc40070c32e20fb339b14ef99813c6de5a0b"
+    },
+    "LISTA_SERVICOS_LC_116": {
+      "rowCount": 255,
+      "rowsHash": "9d24e282ce114978cb63d6acf9fd6cd9fea5363e7d3147a82ab59c963d788a6c",
+      "ddlHash": "bb2e4088d0058792db569af19cbd995e37b78afd0e24522a46c5965b1ef6ceb9"
+    },
+    "MUNICIPIO": {
+      "rowCount": 5573,
+      "rowsHash": "12b616cda5c0e308c0d904b6162da4aceac00362be29824cf4c29948c6e859bd",
+      "ddlHash": "4ee9f7b3ef67bcf5636ff492ccd1c5e3846776013bd2b0381706f92914eebb8e"
+    },
+    "NBS": {
+      "rowCount": 1237,
+      "rowsHash": "3671220b36cb458c871fa0d4da2a641b78baf81561b955bf60f8b2d871ba0e2a",
+      "ddlHash": "8931843e2f2e7731844a1361460ab7166ea742f812244578b8e7065e2c1e699b"
+    },
+    "NBS_APLICAVEL": {
+      "rowCount": 118,
+      "rowsHash": "a0e3918c990e0896c06b31a92130767abef66506690129ac648514c1e81baf61",
+      "ddlHash": "9abf845f1520bbd2c4d37cc4c207df10a9efe482920f7f4546c38afc0120d547"
+    },
+    "NCM": {
+      "rowCount": 15162,
+      "rowsHash": "e16f498143fe30f2a554fe19edcf640ffd6c40c10e310f607c82136767dc01d8",
+      "ddlHash": "efb80ac3fb50825beaf2ecb7b3775cdfb1ec5aeab15bcc1edd1299fa9b148f7d"
+    },
+    "NCM_APLICAVEL": {
+      "rowCount": 1372,
+      "rowsHash": "cd5e93609b9195c7788b4ec321520b5dd43f9b86181fc6696372b391cad0df1f",
+      "ddlHash": "68d9701a7d36afe5190674f70c1ce1935c85afaa20a52df1987d908660af9ed6"
+    },
+    "PERCENTUAL_REDUCAO": {
+      "rowCount": 519,
+      "rowsHash": "b3c36c3929273be71067635060bad8320f9bb03bd6603571d657f04719fb12e3",
+      "ddlHash": "a4557302b27b927a437efce3302f031057da001a908235588e5c653621f96f46"
+    },
+    "REDUTOR": {
+      "rowCount": 0,
+      "rowsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "ddlHash": "3e67447b1199b15ec7e8eea5a9444c390fea2f668623343c2149ea32e56034a0"
+    },
+    "REDUTOR_COMPRA_GOVERNAMENTAL": {
+      "rowCount": 1,
+      "rowsHash": "f7e5144eb5de1833f35b4febd6d3c955dff3a5e6f4ffcfb94cb6efaad78f30f7",
+      "ddlHash": "22f584131b50517a2fa8792496ff6f03a1e03ca7fd2c62e54b24018fffde3d9b"
+    },
+    "REGIME_APURACAO_SIMPLES_NACIONAL": {
+      "rowCount": 5,
+      "rowsHash": "2549811de73c2839a82c4a8f3bb890b043ca1a539434e1f0bcebd568950c74e9",
+      "ddlHash": "769188c6c791b96c8e9882d0931a89d059b36a8729f955ef5d24e094d3a51ee0"
+    },
+    "SITUACAO_ISS_PAR_ALIQUOTA_SIMPLES_NACIONAL": {
+      "rowCount": 10,
+      "rowsHash": "d49c8583711fbe1f073d40e13930a5c3f2fc5b3b251557d729557330de2ccfa2",
+      "ddlHash": "51bb427c84436196fbe950fa517f4b10b8f797cfe094cafc402c280bd654dadf"
+    },
+    "SITUACAO_TRIBUTARIA": {
+      "rowCount": 25,
+      "rowsHash": "c9784d1107b118b202b0dd9b9928805337605fada73d2335253ee768165d206d",
+      "ddlHash": "1eab1e731e512c460bb7a6527f2f86801826b112e5b1d4b25b341e92a837a5e0"
+    },
+    "TIPO_DFE": {
+      "rowCount": 18,
+      "rowsHash": "c29f370f8acbe750d90277329f7a3ffb86cd105b118d5aee053c2f7b9a1a6ef7",
+      "ddlHash": "bf5c0e83646784fea78184360c2df47c16309b8f3d70f70dad88e7895e25d9e9"
+    },
+    "TIPO_DFE_ATIVIDADE_SIMPLES_NACIONAL": {
+      "rowCount": 29,
+      "rowsHash": "9bcc8570cf8beaa83f78be2cfcefc6c0d7e71417903f8dc3bdc178bae10b1c6a",
+      "ddlHash": "824d8496e8c5515ebc5eb120ff9fdc0aac3c19a1f36e8270f5ebd8221875a2ff"
+    },
+    "TIPO_DFE_CALCULO_SIMPLES_NACIONAL": {
+      "rowCount": 8,
+      "rowsHash": "7e1569440b56386b423161b26b8b33684072af92ccc30c57d7de8c155a9bd2a2",
+      "ddlHash": "7e4d57cfc963d478d6a1851842a07676f97d00f45ce6dcfc3615bc7fbc86557d"
+    },
+    "TIPO_DFE_CLASSIFICACAO": {
+      "rowCount": 419,
+      "rowsHash": "b38ea57441533a6854d437fee934285519b151548fe5ce2e38cf497ee8de5033",
+      "ddlHash": "fa4fe6f8013f712bb5abc1620c09d00ee188f8d65b3341315318f35871727a90"
+    },
+    "TIPO_RECEITA_BRUTA_SIMPLES_NACIONAL": {
+      "rowCount": 14,
+      "rowsHash": "db7648c153390e1eb9e628b7a661869eb5508f352ebf1597043a6ea752f82749",
+      "ddlHash": "1987de2d9b2e96898457acdca3e62c2de294e8965e668c0cce840d8b291d0d53"
+    },
+    "TOMADOR_ESPECIFICO": {
+      "rowCount": 6,
+      "rowsHash": "f61ba551a17af178a5b2f84ec48afe080e55556ddbabdb4b1a27b1712b0a8be1",
+      "ddlHash": "9a681ce9781334836b66ed76dcc1b9da71d806f764331c9ce3071afb4f6f38b0"
+    },
+    "TRANSFERENCIA_CBS_ENTE_GOV": {
+      "rowCount": 6,
+      "rowsHash": "99b3208a94a4b1e9a0b95c95edf94d07d1e670fb20995d8b0a1939ee8f994be6",
+      "ddlHash": "4a649b9d2c160e76656afec7eb5fd6aa81f1b23c5f83dbd94dbf9d989ab01c6b"
+    },
+    "TRANSICAO_ALIQUOTA_COMPRA_GOV_SIMPLES_NACIONAL": {
+      "rowCount": 6,
+      "rowsHash": "dc49e9e4f09d0899ae877c3f47d3716cab3ebe9ee180cb58b6129a3b3680145e",
+      "ddlHash": "241f0e989fc93f46cc2a98df986651fde63594aeabbb2b574abb54361cfc9e97"
+    },
+    "TRATAMENTO_CLASSIFICACAO": {
+      "rowCount": 202,
+      "rowsHash": "6e8e8a77b9b27b0e3673608cb1ed06544d18adf89100f32a25ef12ab4796fa56",
+      "ddlHash": "6c3ff46ca5b4c36fb109e3e3c55927d56aab3b58c76445d791b8ecf070f4c12a"
+    },
+    "TRATAMENTO_TRIBUTARIO": {
+      "rowCount": 43,
+      "rowsHash": "7d4689928835f2c52b8b0c8e74902a63808bd4764371ec2af47b562bf62462d6",
+      "ddlHash": "57788da6f36f8818a1d3631b1b79990422cf8317730738895fcf8585fbd3fc8c"
+    },
+    "TRIBUTO": {
+      "rowCount": 4,
+      "rowsHash": "a919ceae9fb1136daa60ba5888ab0fbb7366db2b6d32ecfec14238129b2459d4",
+      "ddlHash": "e05093da2c3debe149cbd40511ed2e2734ba255b79bc219b4737d76aec6048eb"
+    },
+    "TRIBUTO_SITUACAO_TRIBUTARIA": {
+      "rowCount": 61,
+      "rowsHash": "6c5ca4e128c5b32aad0b6fbaa0156799dff3a485a3872b109d74dcf9b959a985",
+      "ddlHash": "3cd601cad7890932fd29577105c989058c17ce67605e6e9374521438deb33514"
+    },
+    "UF": {
+      "rowCount": 28,
+      "rowsHash": "80c8f23033cffa87eaa11cf458569e8144c2489d704396a2aad8840b6523de44",
+      "ddlHash": "c4b89f9640434a8a1157233b7b74319663c4114e14baf5d9ca2b3b30e9b46b92"
+    },
+    "UNIDADE_MEDIDA": {
+      "rowCount": 5,
+      "rowsHash": "1a232c17c62c8a4be38a2fe0f083007a744295d57952cc2695b1988258eb8252",
+      "ddlHash": "fcb35608851ca10143184a3283990fc9ec01e80a0976ff31cb897b0b96cac7f5"
+    },
+    "VERSAO_BASE_DADO": {
+      "rowCount": 73,
+      "rowsHash": "98d9e7c17046b5ce314bc3ffa83dadfc87653ae15a7c0fe2296147df925dadf2",
+      "ddlHash": "deb3df4ec2464c705005888ec93d55d7038f9ed52c2d2c575b6ba81c9a1eef04"
+    }
+  },
+  "indexes": [
+    "IDX_ATCF_ATCL_ID",
+    "IDX_ATCF_FDLG_ID",
+    "IDX_ATCF_FIM_VIGENCIA",
+    "IDX_ATCF_INICIO_VIGENCIA",
+    "IDX_ATCL_ATOR_ID",
+    "IDX_ATCL_CLTR_ID",
+    "IDX_ATCL_FIM_VIGENCIA",
+    "IDX_ATCL_INICIO_VIGENCIA",
+    "IDX_ATOR_FIM_VIGENCIA",
+    "IDX_ATOR_GRAT_ID",
+    "IDX_ATOR_INICIO_VIGENCIA",
+    "IDX_GRAT_FIM_VIGENCIA",
+    "IDX_GRAT_INICIO_VIGENCIA",
+    "idx_ajuste_vigencia",
+    "idx_aliquota_ad_rem_fim_vigencia",
+    "idx_aliquota_ad_rem_inicio_vigencia",
+    "idx_aliquota_ad_rem_produto_aare_id",
+    "idx_aliquota_ad_rem_produto_fim_vigencia",
+    "idx_aliquota_ad_rem_produto_inicio_vigencia",
+    "idx_aliquota_ad_rem_produto_ncm_cd",
+    "idx_aliquota_ad_rem_produto_vigencia",
+    "idx_aliquota_ad_rem_servico_vigencia",
+    "idx_aliquota_ad_rem_tbto_id",
+    "idx_aliquota_ad_rem_unmd_id",
+    "idx_aliquota_ad_rem_vigencia",
+    "idx_aliquota_ad_valorem_fim_vigencia",
+    "idx_aliquota_ad_valorem_inicio_vigencia",
+    "idx_aliquota_ad_valorem_produto_aadv_id",
+    "idx_aliquota_ad_valorem_produto_fim_vigencia",
+    "idx_aliquota_ad_valorem_produto_inicio_vigencia",
+    "idx_aliquota_ad_valorem_produto_ncm_cd",
+    "idx_aliquota_ad_valorem_produto_vigencia",
+    "idx_aliquota_ad_valorem_servico_vigencia",
+    "idx_aliquota_ad_valorem_tbto_id",
+    "idx_aliquota_ad_valorem_vigencia",
+    "idx_aliquota_padrao_alre_id",
+    "idx_aliquota_padrao_fim_vigencia",
+    "idx_aliquota_padrao_inicio_vigencia",
+    "idx_aliquota_padrao_muni_cd",
+    "idx_aliquota_padrao_uf_cd",
+    "idx_aliquota_padrao_vigencia",
+    "idx_aliquota_referencia_vigencia",
+    "idx_anexo_vigencia",
+    "idx_apropriacao_credito_adquirente_vigencia",
+    "idx_classif_nbs_indop_lc_cltr_id",
+    "idx_classif_nbs_indop_lc_fim_vigencia",
+    "idx_classif_nbs_indop_lc_inicio_vigencia",
+    "idx_classif_nbs_indop_lc_ioic_id",
+    "idx_classif_nbs_indop_lc_lslc_cd",
+    "idx_classif_nbs_indop_lc_nbs_cd",
+    "idx_classificacao_tributaria_fim_vigencia",
+    "idx_classificacao_tributaria_inicio_vigencia",
+    "idx_classificacao_tributaria_sitr_id",
+    "idx_classificacao_tributaria_vigencia",
+    "idx_excecao_ad_rem_produto_vigencia",
+    "idx_excecao_ad_rem_servico_vigencia",
+    "idx_excecao_ad_valorem_produto_vigencia",
+    "idx_excecao_ad_valorem_servico_vigencia",
+    "idx_excecao_nbs_aplicavel_vigencia",
+    "idx_excecao_ncm_aplicavel_vigencia",
+    "idx_fundamentacao_classificacao_cltr_id",
+    "idx_fundamentacao_classificacao_fim_vigencia",
+    "idx_fundamentacao_classificacao_inicio_vigencia",
+    "idx_fundamentacao_classificacao_vigencia",
+    "idx_fundamentacao_legal_vigencia",
+    "idx_indicador_operacao_ibs_cbs_fim_vigencia",
+    "idx_indicador_operacao_ibs_cbs_inicio_vigencia",
+    "idx_indicador_operacao_ibs_cbs_ioic_cd",
+    "idx_indicador_operacao_ibs_cbs_local_incidencia",
+    "idx_lista_servicos_lc_116_descricao",
+    "idx_lista_servicos_lc_116_fim_vigencia",
+    "idx_lista_servicos_lc_116_inicio_vigencia",
+    "idx_municipio_nome",
+    "idx_municipio_uf_cd",
+    "idx_nbs_aplicavel_cltr_id",
+    "idx_nbs_aplicavel_fim_vigencia",
+    "idx_nbs_aplicavel_inicio_vigencia",
+    "idx_nbs_aplicavel_nbs_cd",
+    "idx_nbs_aplicavel_vigencia",
+    "idx_nbs_codigo",
+    "idx_nbs_fim_vigencia",
+    "idx_nbs_inicio_vigencia",
+    "idx_nbs_vigencia",
+    "idx_ncm_aplicavel_cltr_id",
+    "idx_ncm_aplicavel_fim_vigencia",
+    "idx_ncm_aplicavel_inicio_vigencia",
+    "idx_ncm_aplicavel_ncm_cd",
+    "idx_ncm_aplicavel_vigencia",
+    "idx_ncm_codigo",
+    "idx_ncm_fim_vigencia",
+    "idx_ncm_inicio_vigencia",
+    "idx_ncm_vigencia",
+    "idx_percentual_reducao_vigencia",
+    "idx_redutor_compra_governamental_fim_vigencia",
+    "idx_redutor_compra_governamental_inicio_vigencia",
+    "idx_redutor_vigencia",
+    "idx_situacao_tributaria_vigencia",
+    "idx_tipo_dfe_classificacao_vigencia",
+    "idx_tipo_dfe_vigencia",
+    "idx_tomador_especifico_vigencia",
+    "idx_transferencia_cbs_ente_gov_fim_vigencia",
+    "idx_transferencia_cbs_ente_gov_inicio_vigencia",
+    "idx_tratamento_classificacao_vigencia",
+    "idx_tratamento_tributario_vigencia",
+    "idx_tributo_fim_vigencia",
+    "idx_tributo_inicio_vigencia",
+    "idx_tributo_nome",
+    "idx_tributo_sigla",
+    "idx_tributo_situacao_tributaria_fim_vigencia",
+    "idx_tributo_situacao_tributaria_inicio_vigencia",
+    "idx_tributo_situacao_tributaria_sitr_id",
+    "idx_tributo_situacao_tributaria_tbto_id",
+    "idx_tributo_situacao_tributaria_vigencia",
+    "idx_tributo_vigencia",
+    "idx_uf_sigla",
+    "idx_unidade_medida_vigencia",
+    "sqlite_autoindex_LISTA_SERVICOS_LC_116_1",
+    "sqlite_autoindex_NBS_1",
+    "sqlite_autoindex_NCM_1"
+  ]
+}

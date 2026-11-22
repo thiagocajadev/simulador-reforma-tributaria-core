@@ -1,0 +1,15 @@
+{
+  "id": "fixture-selective-tax-single-rounding-2027",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2027-03-10T10:00:00-03:00",
+  "municipio": 4314902,
+  "uf": "RS",
+  "tpDoc": 55,
+  "itens": [
+    {
+      "numero": 1, "ncm": "24021000", "cst": "000", "cClassTrib": "000001", "baseCalculo": 15.00, "quantidade": 2.5, "unidade": "VN",
+      "impostoSeletivo": { "cst": "000", "cClassTrib": "000001", "baseCalculo": 15.00, "quantidade": 2.5, "unidade": "VN" },
+      "aliquotasNominais": { "cbs": 8.8, "ibsEstadual": 0.05, "ibsMunicipal": 0.05, "impostoSeletivo": { "adValorem": 66.7, "adRem": 3.5 } }
+    }
+  ]
+}

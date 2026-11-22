@@ -1,0 +1,63 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "91",
+      "opSimpNac": "3",
+      "regApIBSCBSSN": "1",
+      "regApTribSN": "3",
+      "regimeApuracao": "SN_PLENO"
+    },
+    "resolucaoAliquotas": {
+      "fatorR": false,
+      "indSublimite": false,
+      "itens": [
+        {
+          "numero": 1,
+          "cAtivSN": "14",
+          "anexoAplicado": "IV",
+          "tipoAliquota": "SEM_REDISTRIBUICAO",
+          "regraAliquota": "ISS_FORA_DO_SIMPLES",
+          "pIBSSN": "0.0196",
+          "pCBSSN": "1.7764",
+          "motivo": "RESOLVIDA",
+          "avisos": []
+        }
+      ],
+      "avisos": []
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "6400.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "6400.00",
+          "pIBSSN": "0.02",
+          "vIBSSN": "1.28",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "1.78",
+          "vCBSSN": "113.92",
+          "vCBSPendSusp": "0.00",
+          "totalItem": "115.20",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 6.400,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 6.400,00, com alíquota efetiva de 1,78%. Valor devido de R$ 113,92 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 6.400,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 6.400,00, com alíquota efetiva de 0,02%. Valor devido de R$ 1,28 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "6400.00",
+      "vBC": "6400.00",
+      "vIBSSNtot": "1.28",
+      "vIBSSNtotPendSusp": "0.00",
+      "vCBSSNtot": "113.92",
+      "vCBSSNtotPendSusp": "0.00",
+      "totalTributos": "115.20"
+    }
+  }
+}

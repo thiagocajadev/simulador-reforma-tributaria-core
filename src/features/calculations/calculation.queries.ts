@@ -1,0 +1,243 @@
+// The CBS/IBS queries the upstream repositories run (NcmRepository, SituacaoTributariaRepository,
+// ClassificacaoTributariaRepository, TratamentoClassificacaoRepository, NcmAplicavelRepository...),
+// in SQLite for D1; the Imposto Seletivo ones are in selective.tax.queries.ts. Parameter ?1 is
+// always the operation date. Tax ids: 1 Imposto Seletivo, 2 CBS, 3 IBS UF, 4 IBS Mun.
+
+import { buildValidOnClause } from "@/shared/data/validity.period.ts";
+
+const CBS_IBS_TAX_ID = 2;
+
+function validOn(startColumn: string, endColumn: string) {
+  const clause = buildValidOnClause({ startColumn, endColumn, dateParameter: "?1" });
+  return clause;
+}
+
+const CLASSIFICATION_CTE = `
+WITH classification_cte AS (
+  SELECT
+    CLASSIFICACAO_TRIBUTARIA.CLTR_ID AS id,
+    SITUACAO_TRIBUTARIA.SITR_CD AS cstCode,
+    SITUACAO_TRIBUTARIA.SITR_IND_GRED AS hasReductionGroup,
+    CLASSIFICACAO_TRIBUTARIA.CLTR_TIPO_ALIQUOTA AS rateType
+  FROM
+    CLASSIFICACAO_TRIBUTARIA
+  JOIN
+    SITUACAO_TRIBUTARIA ON SITUACAO_TRIBUTARIA.SITR_ID = CLASSIFICACAO_TRIBUTARIA.CLTR_SITR_ID
+  JOIN
+    TRIBUTO_SITUACAO_TRIBUTARIA ON TRIBUTO_SITUACAO_TRIBUTARIA.TRST_SITR_ID = SITUACAO_TRIBUTARIA.SITR_ID
+  WHERE
+    CLASSIFICACAO_TRIBUTARIA.CLTR_CD = ?2 AND
+    TRIBUTO_SITUACAO_TRIBUTARIA.TRST_TBTO_ID = ${CBS_IBS_TAX_ID} AND
+    ${validOn("CLASSIFICACAO_TRIBUTARIA.CLTR_INICIO_VIGENCIA", "CLASSIFICACAO_TRIBUTARIA.CLTR_FIM_VIGENCIA")} AND
+    ${validOn("SITUACAO_TRIBUTARIA.SITR_INICIO_VIGENCIA", "SITUACAO_TRIBUTARIA.SITR_FIM_VIGENCIA")} AND
+    ${validOn("TRIBUTO_SITUACAO_TRIBUTARIA.TRST_INICIO_VIGENCIA", "TRIBUTO_SITUACAO_TRIBUTARIA.TRST_FIM_VIGENCIA")}
+  LIMIT 1
+)`;
+
+const NCM_FOUND_SQL = `
+SELECT EXISTS (
+  SELECT 1
+  FROM NCM
+  WHERE
+    NCM.NCM_CD = ?2 AND
+    ${validOn("NCM.NCM_INICIO_VIGENCIA", "NCM.NCM_FIM_VIGENCIA")}
+) AS isFound;`;
+
+const NBS_FOUND_SQL = `
+SELECT EXISTS (
+  SELECT 1
+  FROM NBS
+  WHERE
+    NBS.NBS_CD = ?2 AND
+    ${validOn("NBS.NBS_INICIO_VIGENCIA", "NBS.NBS_FIM_VIGENCIA")}
+) AS isFound;`;
+
+const CST_SQL = `
+SELECT
+  SITUACAO_TRIBUTARIA.SITR_IND_GIBSCBS AS hasTaxGroup
+FROM
+  SITUACAO_TRIBUTARIA
+JOIN
+  TRIBUTO_SITUACAO_TRIBUTARIA ON TRIBUTO_SITUACAO_TRIBUTARIA.TRST_SITR_ID = SITUACAO_TRIBUTARIA.SITR_ID
+WHERE
+  SITUACAO_TRIBUTARIA.SITR_CD = ?2 AND
+  TRIBUTO_SITUACAO_TRIBUTARIA.TRST_TBTO_ID = ${CBS_IBS_TAX_ID} AND
+  ${validOn("TRIBUTO_SITUACAO_TRIBUTARIA.TRST_INICIO_VIGENCIA", "TRIBUTO_SITUACAO_TRIBUTARIA.TRST_FIM_VIGENCIA")} AND
+  ${validOn("SITUACAO_TRIBUTARIA.SITR_INICIO_VIGENCIA", "SITUACAO_TRIBUTARIA.SITR_FIM_VIGENCIA")}
+LIMIT 1;`;
+
+const CLASSIFICATION_SQL = `${CLASSIFICATION_CTE}
+SELECT
+  classification_cte.cstCode,
+  classification_cte.hasReductionGroup,
+  classification_cte.rateType
+FROM
+  classification_cte;`;
+
+const DOCUMENT_TYPE_LINKS_SQL = `${CLASSIFICATION_CTE}
+SELECT
+  TIPO_DFE_CLASSIFICACAO.TDCL_TPDF_ID AS documentTypeId
+FROM
+  TIPO_DFE_CLASSIFICACAO
+JOIN
+  classification_cte ON classification_cte.id = TIPO_DFE_CLASSIFICACAO.TDCL_CLTR_ID
+WHERE
+  ${validOn("TIPO_DFE_CLASSIFICACAO.TDCL_INICIO_VIGENCIA", "TIPO_DFE_CLASSIFICACAO.TDCL_FIM_VIGENCIA")};`;
+
+const TREATMENT_SQL = `${CLASSIFICATION_CTE}
+SELECT
+  TRATAMENTO_TRIBUTARIO.TRTR_DESCRICAO AS description,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_ALIQUOTA AS rateFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_ALIQUOTA_EFETIVA AS effectiveRateFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_BASE_CALCULO AS baseFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_TRIBUTO_CALCULADO AS calculatedTaxFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_TRIBUTO_DEVIDO AS taxDueFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_PERCENTUAL_DIFERIMENTO AS deferralPercentFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_EXPRESSAO_VALOR_DIFERIMENTO AS deferralAmountFormula,
+  TRATAMENTO_TRIBUTARIO.TRTR_IN_POSSUI_PERCENTUAL_REDUCAO AS hasReduction,
+  TRATAMENTO_TRIBUTARIO.TRTR_IN_POSSUI_AJUSTE AS hasAdjustment,
+  TRATAMENTO_TRIBUTARIO.TRTR_IN_POSSUI_MONOFASIA AS isMonophasic,
+  TRATAMENTO_TRIBUTARIO.TRTR_IN_EXIGE_GRUPO_DESONERACAO AS requiresTaxRelief
+FROM
+  TRATAMENTO_CLASSIFICACAO
+JOIN
+  classification_cte ON classification_cte.id = TRATAMENTO_CLASSIFICACAO.TRCL_CLTR_ID
+JOIN
+  TRATAMENTO_TRIBUTARIO ON TRATAMENTO_TRIBUTARIO.TRTR_ID = TRATAMENTO_CLASSIFICACAO.TRCL_TRTR_ID
+WHERE
+  ${validOn("TRATAMENTO_CLASSIFICACAO.TRCL_INICIO_VIGENCIA", "TRATAMENTO_CLASSIFICACAO.TRCL_FIM_VIGENCIA")}
+LIMIT 1;`;
+
+const REDUCTION_PERCENTS_SQL = `${CLASSIFICATION_CTE}
+SELECT
+  PERCENTUAL_REDUCAO.PERE_TBTO_ID AS taxId,
+  PERCENTUAL_REDUCAO.PERE_VALOR AS percent
+FROM
+  PERCENTUAL_REDUCAO
+JOIN
+  classification_cte ON classification_cte.id = PERCENTUAL_REDUCAO.PERE_CLTR_ID
+WHERE
+  ${validOn("PERCENTUAL_REDUCAO.PERE_INICIO_VIGENCIA", "PERCENTUAL_REDUCAO.PERE_FIM_VIGENCIA")};`;
+
+// why: ALIQUOTA_AD_VALOREM_SERVICO (rates by NBS) is empty at V0073, so the sectoral and fixed
+// rates come from the classification alone (AliquotaAdValoremServicoRepository, last query).
+const CLASSIFICATION_RATES_SQL = `${CLASSIFICATION_CTE}
+SELECT
+  ALIQUOTA_AD_VALOREM.AADV_TBTO_ID AS taxId,
+  ALIQUOTA_AD_VALOREM.AADV_VALOR AS percent
+FROM
+  ALIQUOTA_AD_VALOREM
+JOIN
+  classification_cte ON classification_cte.id = ALIQUOTA_AD_VALOREM.AADV_CLTR_ID
+WHERE
+  ${validOn("ALIQUOTA_AD_VALOREM.AADV_INICIO_VIGENCIA", "ALIQUOTA_AD_VALOREM.AADV_FIM_VIGENCIA")};`;
+
+// why: annex_cte reads the classification's annex rows once, instead of once per EXISTS.
+function buildAnnexSql(nomenclature: "NCM" | "NBS") {
+  const annex = `${nomenclature}_APLICAVEL`;
+  const exception = `EXCECAO_${nomenclature}_APLICAVEL`;
+  const annexColumn = `${annex}.${nomenclature}A`;
+  const exceptionColumn = `${exception}.E${nomenclature}`;
+  const exceptionCode = `${exceptionColumn}_${nomenclature}_CD`;
+  const isCodeListed = "annex_cte.code = SUBSTR(?3, 1, LENGTH(annex_cte.code))";
+  const isExceptionValid = validOn(
+    `${exceptionColumn}_INICIO_VIGENCIA`,
+    `${exceptionColumn}_FIM_VIGENCIA`,
+  );
+  const sql = `${CLASSIFICATION_CTE},
+
+annex_cte AS MATERIALIZED (
+  SELECT
+    ${annexColumn}_ID AS id,
+    ${annexColumn}_${nomenclature}_CD AS code,
+    (${validOn(`${annexColumn}_INICIO_VIGENCIA`, `${annexColumn}_FIM_VIGENCIA`)}) AS isValid
+  FROM
+    ${annex}
+  JOIN
+    classification_cte ON classification_cte.id = ${annexColumn}_CLTR_ID
+)
+
+SELECT
+  EXISTS (
+    SELECT 1 FROM annex_cte WHERE annex_cte.isValid
+  ) AS hasAnnex,
+  EXISTS (
+    SELECT 1 FROM annex_cte WHERE ${isCodeListed} AND annex_cte.isValid
+  ) AS isListed,
+  EXISTS (
+    SELECT 1
+    FROM ${exception}
+    JOIN annex_cte ON annex_cte.id = ${exceptionColumn}_${nomenclature}A_ID
+    WHERE
+      ${isCodeListed} AND
+      ${exceptionCode} = SUBSTR(?3, 1, LENGTH(${exceptionCode})) AND
+      ${isExceptionValid}
+  ) AS hasException,
+  EXISTS (
+    SELECT 1
+    FROM annex_cte
+    LEFT JOIN ${exception} ON ${exceptionColumn}_${nomenclature}A_ID = annex_cte.id
+    WHERE
+      ${isCodeListed} AND
+      annex_cte.isValid AND
+      (${exceptionColumn}_ID IS NULL OR NOT (${isExceptionValid}))
+  ) AS isListedWithoutException
+FROM
+  classification_cte;`;
+  return sql;
+}
+
+const NCM_ANNEX_SQL = buildAnnexSql("NCM");
+const NBS_ANNEX_SQL = buildAnnexSql("NBS");
+
+const LEGAL_GROUND_SQL = `${CLASSIFICATION_CTE}
+SELECT
+  FUNDAMENTACAO_LEGAL.FDLG_TEXTO_CURTO AS shortReference,
+  FUNDAMENTACAO_LEGAL.FDLG_TEXTO AS description
+FROM
+  FUNDAMENTACAO_CLASSIFICACAO
+JOIN
+  classification_cte ON classification_cte.id = FUNDAMENTACAO_CLASSIFICACAO.FDCL_CLTR_ID
+JOIN
+  FUNDAMENTACAO_LEGAL ON FUNDAMENTACAO_LEGAL.FDLG_ID = FUNDAMENTACAO_CLASSIFICACAO.FDCL_FDLG_ID
+WHERE
+  ${validOn("FUNDAMENTACAO_CLASSIFICACAO.FDCL_INICIO_VIGENCIA", "FUNDAMENTACAO_CLASSIFICACAO.FDCL_FIM_VIGENCIA")}
+LIMIT 1;`;
+
+const DOCUMENT_TYPE_SQL = `
+SELECT
+  TIPO_DFE.TPDF_ID AS id,
+  TIPO_DFE.TPDF_SIGLA AS acronym,
+  TIPO_DFE.TPDF_B_PERMITE_NCM_ZERO AS allowsZeroNcm,
+  TIPO_DFE.TPDF_B_POSSUI_TRATAMENTO_CALCULADORA AS isSupported
+FROM
+  TIPO_DFE
+WHERE
+  TIPO_DFE.TPDF_TIPO = ?2 AND
+  ${validOn("TIPO_DFE.TPDF_INICIO_VIGENCIA", "TIPO_DFE.TPDF_FIM_VIGENCIA")}
+LIMIT 1;`;
+
+const DATA_VERSION_SQL = `
+SELECT
+  VERSAO_BASE_DADO.VRBD_VERSAO_BASE_DADO AS dataVersion
+FROM
+  VERSAO_BASE_DADO
+ORDER BY
+  VERSAO_BASE_DADO.VRBD_ID DESC
+LIMIT 1;`;
+
+export {
+  CLASSIFICATION_RATES_SQL,
+  CLASSIFICATION_SQL,
+  CST_SQL,
+  DATA_VERSION_SQL,
+  DOCUMENT_TYPE_LINKS_SQL,
+  DOCUMENT_TYPE_SQL,
+  LEGAL_GROUND_SQL,
+  NBS_ANNEX_SQL,
+  NBS_FOUND_SQL,
+  NCM_ANNEX_SQL,
+  NCM_FOUND_SQL,
+  REDUCTION_PERCENTS_SQL,
+  TREATMENT_SQL,
+};

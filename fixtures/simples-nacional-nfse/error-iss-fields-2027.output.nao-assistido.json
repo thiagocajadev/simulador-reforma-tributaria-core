@@ -1,0 +1,53 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "91",
+      "opSimpNac": "3",
+      "regApIBSCBSSN": "1",
+      "regApTribSN": "1",
+      "regimeApuracao": "SN_PLENO"
+    },
+    "resolucaoAliquotas": {
+      "fatorR": false,
+      "indSublimite": false,
+      "itens": [
+        {
+          "numero": 1,
+          "cAtivSN": "13",
+          "anexoAplicado": "IV",
+          "tipoAliquota": "COM_REDISTRIBUICAO",
+          "regraAliquota": "PADRAO",
+          "pIBSSN": "0.0215",
+          "pCBSSN": "1.9530",
+          "motivo": "RESOLVIDA",
+          "avisos": []
+        }
+      ],
+      "avisos": []
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-036",
+            "title": "Tributação do ISSQN (tribISSQN) ausente ou inválida",
+            "code": "VSN-036",
+            "pointer": "#/itens/0/tribISSQN",
+            "detail": "A tributação do ISSQN (tribISSQN) deve ser 1, 2, 3 ou 4, recebido: '5'."
+          },
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-038",
+            "title": "Tipo de benefício municipal (tpBM) inválido",
+            "code": "VSN-038",
+            "pointer": "#/itens/0/tpBM",
+            "detail": "O tipo de benefício municipal (tpBM) deve ser 1, 2, 3 ou 4, recebido: '9'."
+          }
+        ]
+      }
+    ]
+  }
+}

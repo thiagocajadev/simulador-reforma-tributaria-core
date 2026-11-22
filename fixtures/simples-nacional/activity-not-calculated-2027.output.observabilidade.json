@@ -1,0 +1,98 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "55",
+      "CRT": "1"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "1000.00",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.26",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "23.59",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "23.85",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 1.000,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.000,00, com alíquota efetiva de 2,3591%. Valor devido de R$ 23,59 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 1.000,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.000,00, com alíquota efetiva de 0,026%. Valor devido de R$ 0,26 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 2,
+        "estadoItem": "NAO_CALCULADO",
+        "motivoEstado": {
+          "codigo": "CATIVSN_AUSENTE",
+          "descricao": "O código de atividade do Simples Nacional (cAtivSN) não foi informado; sem ele o IBS e a CBS do item não são calculados (NT 2026.005, §5.3.3)."
+        },
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna"
+        }
+      },
+      {
+        "nObj": 3,
+        "estadoItem": "NAO_CALCULADO",
+        "motivoEstado": {
+          "codigo": "CATIVSN_DESCONHECIDO",
+          "descricao": "O código de atividade '77' não existe ou não está vigente na data do fato gerador; o IBS e a CBS do item não são calculados."
+        },
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna"
+        }
+      },
+      {
+        "nObj": 4,
+        "estadoItem": "NAO_CALCULADO",
+        "motivoEstado": {
+          "codigo": "CATIVSN_DESCONHECIDO",
+          "descricao": "O código de atividade '1' não existe ou não está vigente na data do fato gerador; o IBS e a CBS do item não são calculados."
+        },
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna"
+        }
+      },
+      {
+        "nObj": 5,
+        "estadoItem": "NAO_CALCULADO",
+        "motivoEstado": {
+          "codigo": "CATIVSN_INADMISSIVEL_NO_DOCUMENTO",
+          "descricao": "A atividade '07' não é admitida no tipo de documento NF-e (tpDoc 55); o IBS e a CBS do item não são calculados."
+        },
+        "tribCalc": {
+          "vRBSNitem": "1000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna"
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "5000.00",
+      "vBC": "1000.00",
+      "vIBSSNtot": "0.26",
+      "vIBSSNtotPendSusp": "0.00",
+      "vCBSSNtot": "23.59",
+      "vCBSSNtotPendSusp": "0.00",
+      "totalIs": "0.00",
+      "totalTributos": "23.85"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "fixture-error-ncm-not-linked-2026",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2026-03-10T10:00:00-03:00",
+  "municipio": 4314902,
+  "uf": "RS",
+  "itens": [
+    { "numero": 1, "ncm": "02013000", "cst": "200", "cClassTrib": "200035", "baseCalculo": 80.00 }
+  ]
+}

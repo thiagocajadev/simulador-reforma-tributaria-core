@@ -1,0 +1,66 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "91",
+      "opSimpNac": "3",
+      "regApIBSCBSSN": "1",
+      "regApTribSN": "1",
+      "regimeApuracao": "SN_PLENO"
+    },
+    "resolucaoAliquotas": {
+      "fatorR": false,
+      "indSublimite": false,
+      "itens": [
+        {
+          "numero": 1,
+          "cAtivSN": "07",
+          "anexoAplicado": "III",
+          "tipoAliquota": "SEM_REDISTRIBUICAO",
+          "regraAliquota": "ISS_NAO_INCIDE",
+          "pIBSSN": "0.0263",
+          "pCBSSN": "2.3874",
+          "motivo": "RESOLVIDA",
+          "avisos": [
+            "tpRetISSQN desconsiderado: não há retenção do ISS com tribISSQN 2 (a NFS-e recusaria a combinação: regra E0580).",
+            "Par sem redistribuição do ISS ausente no anexo III; aplicado o par com redistribuição, igual quando o ISS não passa do teto."
+          ]
+        }
+      ],
+      "avisos": []
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "4800.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "4800.00",
+          "pIBSSN": "0.03",
+          "vIBSSN": "1.44",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "2.39",
+          "vCBSSN": "114.72",
+          "vCBSPendSusp": "0.00",
+          "totalItem": "116.16",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 4.800,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 4.800,00, com alíquota efetiva de 2,39%. Valor devido de R$ 114,72 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 4.800,00 (Receita bruta - interna). A base de cálculo utilizada é de R$ 4.800,00, com alíquota efetiva de 0,03%. Valor devido de R$ 1,44 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "4800.00",
+      "vBC": "4800.00",
+      "vIBSSNtot": "1.44",
+      "vIBSSNtotPendSusp": "0.00",
+      "vCBSSNtot": "114.72",
+      "vCBSSNtotPendSusp": "0.00",
+      "totalTributos": "116.16"
+    }
+  }
+}

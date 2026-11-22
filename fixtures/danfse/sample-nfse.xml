@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Fictitious NFS-e for layout reference only. No real taxpayer, no real access key.
+  The IBSCBS values match fixtures/regime-regular/education-service-60pct-2026.
+  The CNPJ is the placeholder used by the upstream generator's own tests. The CPF has wrong check digits on
+  purpose, so it cannot belong to anyone.
+  tpAmb and ambGer are 2 (homologation), so the document reads as a test environment note.
+-->
+<NFSe xmlns="http://www.sped.fazenda.gov.br/nfse" versao="1.01">
+  <infNFSe Id="NFS43149022212345678000195000000000000126031234567890">
+    <xLocEmi>Porto Alegre</xLocEmi>
+    <xLocPrestacao>Porto Alegre</xLocPrestacao>
+    <nNFSe>1</nNFSe>
+    <cLocIncid>4314902</cLocIncid>
+    <xLocIncid>Porto Alegre</xLocIncid>
+    <xTribNac>Ensino regular pré-escolar, fundamental e médio, educação de jovens e adultos, superior e demais níveis.</xTribNac>
+    <ambGer>2</ambGer>
+    <cStat>100</cStat>
+    <dhProc>2026-03-10T10:05:00-03:00</dhProc>
+    <emit>
+      <CNPJ>12345678000195</CNPJ>
+      <IM>12345</IM>
+      <xNome>Escola Exemplo de Simulação Ltda</xNome>
+      <enderNac>
+        <xLgr>Rua Fictícia</xLgr>
+        <nro>100</nro>
+        <xBairro>Centro Histórico</xBairro>
+        <cMun>4314902</cMun>
+        <UF>RS</UF>
+        <CEP>90010000</CEP>
+      </enderNac>
+      <email>contato@exemplo.invalid</email>
+    </emit>
+    <valores>
+      <vBC>1200.00</vBC>
+      <vLiq>1200.00</vLiq>
+    </valores>
+    <IBSCBS>
+      <cLocalidadeIncid>4314902</cLocalidadeIncid>
+      <xLocalidadeIncid>Porto Alegre</xLocalidadeIncid>
+      <uf>RS</uf>
+      <valores>
+        <vBC>1200.00</vBC>
+        <uf>
+          <pIBSUF>0.10</pIBSUF>
+          <pRedAliqUF>60.00</pRedAliqUF>
+          <pAliqEfetUF>0.04</pAliqEfetUF>
+        </uf>
+        <mun>
+          <pIBSMun>0.00</pIBSMun>
+          <pRedAliqMun>60.00</pRedAliqMun>
+          <pAliqEfetMun>0.00</pAliqEfetMun>
+        </mun>
+        <fed>
+          <pCBS>0.90</pCBS>
+          <pRedAliqCBS>60.00</pRedAliqCBS>
+          <pAliqEfetCBS>0.36</pAliqEfetCBS>
+        </fed>
+      </valores>
+      <totCIBS>
+        <vTotNF>1204.80</vTotNF>
+        <gIBS>
+          <vIBSTot>0.48</vIBSTot>
+          <gIBSUFTot>
+            <vIBSUF>0.48</vIBSUF>
+          </gIBSUFTot>
+          <gIBSMunTot>
+            <vIBSMun>0.00</vIBSMun>
+          </gIBSMunTot>
+        </gIBS>
+        <gCBS>
+          <vCBS>4.32</vCBS>
+        </gCBS>
+      </totCIBS>
+    </IBSCBS>
+    <DPS versao="1.01">
+      <infDPS Id="DPS431490221234567800019500001000000000000001">
+        <tpAmb>2</tpAmb>
+        <dhEmi>2026-03-10T10:00:00-03:00</dhEmi>
+        <verAplic>simulador-1.0</verAplic>
+        <serie>1</serie>
+        <nDPS>1</nDPS>
+        <dCompet>2026-03-10</dCompet>
+        <tpEmit>1</tpEmit>
+        <cLocEmi>4314902</cLocEmi>
+        <prest>
+          <CNPJ>12345678000195</CNPJ>
+          <regTrib>
+            <opSimpNac>1</opSimpNac>
+            <regEspTrib>0</regEspTrib>
+          </regTrib>
+        </prest>
+        <toma>
+          <CPF>12345678900</CPF>
+          <xNome>Tomador Exemplo da Silva</xNome>
+          <end>
+            <endNac>
+              <cMun>4314902</cMun>
+              <CEP>90020000</CEP>
+            </endNac>
+            <xLgr>Avenida Imaginária</xLgr>
+            <nro>200</nro>
+            <xBairro>Centro Histórico</xBairro>
+          </end>
+          <email>tomador@exemplo.invalid</email>
+        </toma>
+        <serv>
+          <locPrest>
+            <cLocPrestacao>4314902</cLocPrestacao>
+          </locPrest>
+          <cServ>
+            <cTribNac>080101</cTribNac>
+            <xDescServ>Mensalidade escolar de março de 2026 (ensino fundamental). Documento fictício gerado para simulação.</xDescServ>
+            <cNBS>122011200</cNBS>
+          </cServ>
+          <infoCompl>
+            <xInfComp>Simulação da Reforma Tributária do Consumo (LC 214/2025). Sem valor fiscal.</xInfComp>
+          </infoCompl>
+        </serv>
+        <valores>
+          <vServPrest>
+            <vServ>1200.00</vServ>
+          </vServPrest>
+          <trib>
+            <tribMun>
+              <tribISSQN>1</tribISSQN>
+              <tpRetISSQN>1</tpRetISSQN>
+            </tribMun>
+            <totTrib>
+              <pTotTribSN>0.00</pTotTribSN>
+            </totTrib>
+          </trib>
+        </valores>
+        <IBSCBS>
+          <finNFSe>0</finNFSe>
+          <indFinal>1</indFinal>
+          <cIndOp>030101</cIndOp>
+          <indDest>0</indDest>
+          <valores>
+            <trib>
+              <gIBSCBS>
+                <CST>200</CST>
+                <cClassTrib>200028</cClassTrib>
+              </gIBSCBS>
+            </trib>
+          </valores>
+        </IBSCBS>
+      </infDPS>
+    </DPS>
+  </infNFSe>
+</NFSe>

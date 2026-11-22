@@ -1,0 +1,11 @@
+{
+  "status": 422,
+  "body": {
+    "detail": "As alíquotas nominais (os três campos cbs, ibsEstadual e ibsMunicipal) devem ser informadas para operações com fato gerador a partir de 01/01/2027",
+    "instance": "/api/calculadora/regime-geral",
+    "status": 422,
+    "title": "Alíquotas nominais não informadas",
+    "type": "http://localhost/errors/aliquotas-nominais-nao-informadas",
+    "timestamp": "<volatile>"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": 422,
+  "body": {
+    "detail": "NCM de código 02013000 não vinculada à Classificação Tributária de código 200035 (CBS e IBS)",
+    "instance": "/api/calculadora/regime-geral",
+    "status": 422,
+    "title": "NCM não vinculada",
+    "type": "http://localhost/errors/ncm-nao-vinculada",
+    "timestamp": "<volatile>"
+  }
+}

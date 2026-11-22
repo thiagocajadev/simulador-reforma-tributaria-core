@@ -1,0 +1,24 @@
+{
+  "id": "fixture-selective-tax-multi-item-2027",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2027-03-10T10:00:00-03:00",
+  "municipio": 4314902,
+  "uf": "RS",
+  "tpDoc": 55,
+  "itens": [
+    {
+      "numero": 1, "ncm": "22030000", "cst": "000", "cClassTrib": "000001", "baseCalculo": 12.50, "quantidade": 1, "unidade": "UN",
+      "impostoSeletivo": { "cst": "000", "cClassTrib": "000001", "baseCalculo": 12.50 },
+      "aliquotasNominais": { "cbs": 8.8, "ibsEstadual": 0.05, "ibsMunicipal": 0.05, "impostoSeletivo": { "adValorem": 4.2 } }
+    },
+    {
+      "numero": 2, "ncm": "22021000", "cst": "000", "cClassTrib": "000001", "baseCalculo": 7.90, "quantidade": 1, "unidade": "UN",
+      "impostoSeletivo": { "cst": "000", "cClassTrib": "000001", "baseCalculo": 7.90 },
+      "aliquotasNominais": { "cbs": 8.8, "ibsEstadual": 0.05, "ibsMunicipal": 0.05, "impostoSeletivo": { "adValorem": 2.6 } }
+    },
+    {
+      "numero": 3, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 1000.00, "quantidade": 1, "unidade": "UN",
+      "aliquotasNominais": { "cbs": 8.8, "ibsEstadual": 0.05, "ibsMunicipal": 0.05 }
+    }
+  ]
+}

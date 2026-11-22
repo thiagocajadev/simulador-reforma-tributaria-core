@@ -1,0 +1,48 @@
+# Runs the whole check on every push and pull request to main: typecheck, Biome, the names audit and
+# the three test projects. Nothing is deployed from here.
+
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # why: the route tests build their D1 from this submodule's Flyway SQL; the other two are reference only.
+      - name: Check out the regular regime calculator
+        run: git submodule update --init --depth 1 upstream/calculadora-rtc-regime-regular
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          # why: 26 is the Active LTS; package.json engines still accepts 24, kept as the floor by @types/node 24.
+          node-version: 26
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check
+        run: npm run check
+
+      - name: Build
+        run: npm run build

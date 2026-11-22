@@ -1,0 +1,14 @@
+{
+  "id": "fixture-error-nominal-rates-before-2027",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2026-03-10T10:00:00-03:00",
+  "municipio": 4314902,
+  "uf": "RS",
+  "tpDoc": 55,
+  "itens": [
+    {
+      "numero": 1, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 1000.00,
+      "aliquotasNominais": { "cbs": 8.8, "ibsEstadual": 0.05, "ibsMunicipal": 0.05 }
+    }
+  ]
+}

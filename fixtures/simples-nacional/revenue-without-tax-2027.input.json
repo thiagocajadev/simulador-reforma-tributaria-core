@@ -1,0 +1,39 @@
+{
+  "id": "sn-revenue-without-tax-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "55",
+  "CRT": "1",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "01",
+      "cClassTrib": "410001",
+      "ncm": "22030000",
+      "baseCalculo": "120.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "2.3591",
+      "pIBSSN": "0.0260"
+    },
+    {
+      "numero": 2,
+      "cAtivSN": "01",
+      "cClassTrib": "410008",
+      "ncm": "49019900",
+      "baseCalculo": "80.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "2.3591",
+      "pIBSSN": "0.0260"
+    },
+    {
+      "numero": 3,
+      "cAtivSN": "01",
+      "cClassTrib": "410004",
+      "ncm": "22030000",
+      "baseCalculo": "300.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "2.3591",
+      "pIBSSN": "0.0260"
+    }
+  ]
+}

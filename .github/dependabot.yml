@@ -1,0 +1,28 @@
+# Weekly update pull requests for the npm packages and the pinned GitHub Actions.
+# The check workflow runs on each one through its pull_request trigger.
+# The upstream submodules are left out on purpose: a new pin means running the golden cases again.
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    ignore:
+      # why: @types/node follows the oldest Node in engines (24), so the code uses no API 24 lacks.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+      # why: Biome is pinned exactly to the $schema URL in biome.json; a bump edits both, by hand.
+      - dependency-name: "@biomejs/biome"
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]

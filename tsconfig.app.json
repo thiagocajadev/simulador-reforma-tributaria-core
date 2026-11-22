@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"]
+  },
+  "include": ["src/features", "src/shared", "playground"],
+  "exclude": [
+    "src/**/*.test.ts",
+    "playground/**/*.test.ts",
+    "src/features/*/*.route.ts",
+    "src/features/*/*.repository.ts",
+    "src/features/*/*.compose.ts",
+    "src/shared/data",
+    "src/shared/testing",
+    "src/shared/xml/xml.raw.d.ts",
+    "src/shared/http/query.params.ts",
+    "src/shared/http/problem.respond.ts",
+    "src/shared/http/rate.limit.ts",
+    "src/features/calculations/operation.calculate.ts",
+    "src/features/simples-nacional/operation.simples.ts"
+  ]
+}

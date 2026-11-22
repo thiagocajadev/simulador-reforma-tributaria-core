@@ -1,0 +1,31 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "91",
+      "opSimpNac": "3",
+      "regApIBSCBSSN": "3",
+      "regApTribSN": "1",
+      "regimeApuracao": "SOMENTE_RECEITA"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "NAO_CALCULADO",
+        "motivoEstado": {
+          "codigo": "REGIME_SOMENTE_RECEITA",
+          "descricao": "O optante apura o IBS e a CBS pelo regime regular, fora do Simples Nacional; o item leva ao Simples apenas a receita bruta."
+        },
+        "tribCalc": {
+          "vRBSNitem": "10000.00",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna"
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "10000.00"
+    }
+  }
+}

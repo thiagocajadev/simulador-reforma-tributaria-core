@@ -1,0 +1,46 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "91",
+      "opSimpNac": "3",
+      "regApIBSCBSSN": "1",
+      "regApTribSN": "1",
+      "regimeApuracao": "SN_PLENO"
+    },
+    "resolucaoAliquotas": {
+      "fatorR": null,
+      "indSublimite": false,
+      "itens": [
+        {
+          "numero": 1,
+          "cAtivSN": "09",
+          "anexoAplicado": null,
+          "tipoAliquota": null,
+          "regraAliquota": null,
+          "pIBSSN": null,
+          "pCBSSN": null,
+          "motivo": "FATOR_R_AUSENTE",
+          "avisos": []
+        }
+      ],
+      "avisos": []
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "INCONSISTENCIA_ENTRADA",
+        "erros": [
+          {
+            "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-040",
+            "title": "Fator \"r\" (fatorR) ausente",
+            "code": "VSN-040",
+            "pointer": "#/aliquotasEfetivas/fatorR",
+            "detail": "O fatorR é exigido: a atividade 09 é sujeita ao fator \"r\" (Anexo III ou V)."
+          }
+        ]
+      }
+    ]
+  }
+}

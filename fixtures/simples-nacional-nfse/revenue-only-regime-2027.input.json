@@ -1,0 +1,20 @@
+{
+  "id": "sn-nfse-revenue-only-regime-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "91",
+  "opSimpNac": "3",
+  "regApIBSCBSSN": "3",
+  "regApTribSN": "1",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "07",
+      "cClassTrib": "000001",
+      "nbs": "114011100",
+      "baseCalculo": "10000.00",
+      "tribISSQN": "1",
+      "tpRetISSQN": "1"
+    }
+  ]
+}

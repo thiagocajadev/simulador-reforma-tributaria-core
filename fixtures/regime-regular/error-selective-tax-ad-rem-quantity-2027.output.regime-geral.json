@@ -1,0 +1,11 @@
+{
+  "status": 422,
+  "body": {
+    "detail": "A quantidade do Imposto Seletivo deve ser informada para alíquota ad rem",
+    "instance": "/api/calculadora/regime-geral",
+    "status": 422,
+    "title": "Erro genérico de validação",
+    "type": "http://localhost/errors/erro-generico-validacao",
+    "timestamp": "<volatile>"
+  }
+}

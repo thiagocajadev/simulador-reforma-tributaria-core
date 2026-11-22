@@ -1,0 +1,27 @@
+{
+  "status": 422,
+  "body": {
+    "type": "about:blank",
+    "title": "Erros no processamento do cálculo do Simples Nacional",
+    "status": 422,
+    "detail": "O cálculo contém 2 erro(s).",
+    "instance": "/api/calculadora/observabilidade/simples-nacional/nao-assistido",
+    "timestamp": "<volatile>",
+    "errors": [
+      {
+        "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-005",
+        "title": "Alíquota pCBSSN inválida (negativa/fora do formato)",
+        "code": "VSN-005",
+        "pointer": "#/aliquotasEfetivas/anexoIII/pCBSSN",
+        "detail": "O valor não é um número decimal válido, recebido: '2,3874'. Informe até 3 dígitos inteiros e até 34 casas decimais, sem notação científica (ex.: 1.6839)."
+      },
+      {
+        "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-007",
+        "title": "Alíquota pIBSSN inválida (negativa/fora do formato)",
+        "code": "VSN-007",
+        "pointer": "#/aliquotasEfetivas/anexoIII/semRedistribuicaoISS/pIBSSN",
+        "detail": "O valor não pode ser negativo, recebido: '-0.0231'."
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "sn-pending-option-crt3-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "55",
+  "CRT": "3",
+  "tpRegimeIBSCBS": "2",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "01",
+      "cClassTrib": "000001",
+      "ncm": "22030000",
+      "baseCalculo": "1000.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "2.3591",
+      "pIBSSN": "0.0260"
+    },
+    {
+      "numero": 2,
+      "cAtivSN": "01",
+      "cClassTrib": "550001",
+      "ncm": "22030000",
+      "baseCalculo": "500.00",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "2.3591",
+      "pIBSSN": "0.0260"
+    }
+  ]
+}

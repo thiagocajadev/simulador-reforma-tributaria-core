@@ -1,0 +1,14 @@
+{
+  "id": "fixture-rounding-half-even-2026",
+  "versao": "1.0.0",
+  "dhFatoGerador": "2026-03-10T10:00:00-03:00",
+  "municipio": 4314902,
+  "uf": "RS",
+  "tpDoc": 55,
+  "itens": [
+    { "numero": 1, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 5.00 },
+    { "numero": 2, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 15.00 },
+    { "numero": 3, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 25.00 },
+    { "numero": 4, "ncm": "84713012", "cst": "000", "cClassTrib": "000001", "baseCalculo": 35.00 }
+  ]
+}

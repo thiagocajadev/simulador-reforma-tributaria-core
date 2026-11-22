@@ -1,0 +1,94 @@
+{
+  "status": 200,
+  "body": {
+    "oper": {
+      "data": "2027-03-10",
+      "tpDoc": "55",
+      "CRT": "1"
+    },
+    "objetos": [
+      {
+        "nObj": 1,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "1234.56",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "1234.56",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.32",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "29.12",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "29.44",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 1.234,56 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.234,56, com alíquota efetiva de 2,3591%. Valor devido de R$ 29,12 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 1.234,56 (Receita bruta - interna). A base de cálculo utilizada é de R$ 1.234,56, com alíquota efetiva de 0,026%. Valor devido de R$ 0,32 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 2,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "89.90",
+          "tpRBSN": 1,
+          "tpRBSNDescricao": "Receita bruta - interna",
+          "vBC": "89.90",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.02",
+          "vIBSPendSusp": "0.00",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "2.12",
+          "vCBSPendSusp": "0.00",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "2.14",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 89,90 (Receita bruta - interna). A base de cálculo utilizada é de R$ 89,90, com alíquota efetiva de 2,3591%. Valor devido de R$ 2,12 e pendente/suspenso de R$ 0,00.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 89,90 (Receita bruta - interna). A base de cálculo utilizada é de R$ 89,90, com alíquota efetiva de 0,026%. Valor devido de R$ 0,02 e pendente/suspenso de R$ 0,00."
+          }
+        }
+      },
+      {
+        "nObj": 3,
+        "estadoItem": "CALCULADO",
+        "tribCalc": {
+          "vRBSNitem": "410.00",
+          "tpRBSN": 4,
+          "tpRBSNDescricao": "Receita bruta - exportação indireta",
+          "vBC": "410.00",
+          "pIBSSN": "0.026",
+          "vIBSSN": "0.00",
+          "vIBSPendSusp": "0.11",
+          "pCBSSN": "2.3591",
+          "vCBSSN": "0.00",
+          "vCBSPendSusp": "9.67",
+          "IS": {
+            "valor": "0.00"
+          },
+          "totalItem": "0.00",
+          "memoriaCalculo": {
+            "cbs": "Receita bruta do Simples Nacional de R$ 410,00 (Receita bruta - exportação indireta). A base de cálculo utilizada é de R$ 410,00, com alíquota efetiva de 2,3591%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 9,67.",
+            "ibs": "Receita bruta do Simples Nacional de R$ 410,00 (Receita bruta - exportação indireta). A base de cálculo utilizada é de R$ 410,00, com alíquota efetiva de 0,026%. Valor devido de R$ 0,00 e pendente/suspenso de R$ 0,11."
+          }
+        }
+      }
+    ],
+    "total": {
+      "vRBSNtot": "1734.46",
+      "vBC": "1734.46",
+      "vIBSSNtot": "0.34",
+      "vIBSSNtotPendSusp": "0.11",
+      "vCBSSNtot": "31.24",
+      "vCBSSNtotPendSusp": "9.67",
+      "totalIs": "0.00",
+      "totalTributos": "31.58"
+    }
+  }
+}

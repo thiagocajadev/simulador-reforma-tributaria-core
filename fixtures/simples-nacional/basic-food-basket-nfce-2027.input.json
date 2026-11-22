@@ -1,0 +1,19 @@
+{
+  "id": "sn-basic-food-basket-nfce-2027",
+  "versao": "1.0.0",
+  "data": "2027-03-10",
+  "tpDoc": "65",
+  "CRT": "1",
+  "itens": [
+    {
+      "numero": 1,
+      "cAtivSN": "01",
+      "cClassTrib": "200003",
+      "ncm": "10064000",
+      "baseCalculo": "59.90",
+      "valorImpostoSeletivo": "0.00",
+      "pCBSSN": "1.1612",
+      "pIBSSN": "0.0129"
+    }
+  ]
+}

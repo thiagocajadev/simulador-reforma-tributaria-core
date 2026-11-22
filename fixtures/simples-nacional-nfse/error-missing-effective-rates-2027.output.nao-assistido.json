@@ -1,0 +1,20 @@
+{
+  "status": 422,
+  "body": {
+    "type": "about:blank",
+    "title": "Erros no processamento do cálculo do Simples Nacional",
+    "status": 422,
+    "detail": "O cálculo contém 1 erro(s).",
+    "instance": "/api/calculadora/observabilidade/simples-nacional/nao-assistido",
+    "timestamp": "<volatile>",
+    "errors": [
+      {
+        "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-039",
+        "title": "Alíquotas efetivas do contribuinte (aliquotasEfetivas) ausentes",
+        "code": "VSN-039",
+        "pointer": "#/aliquotasEfetivas",
+        "detail": "A linha de alíquotas efetivas do contribuinte (aliquotasEfetivas) é obrigatória no cálculo não assistido quando o regime calcula tributos."
+      }
+    ]
+  }
+}

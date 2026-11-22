@@ -1,0 +1,20 @@
+{
+  "status": 422,
+  "body": {
+    "type": "about:blank",
+    "title": "Erros no processamento do cálculo do Simples Nacional",
+    "status": 422,
+    "detail": "O cálculo contém 1 erro(s).",
+    "instance": "/api/calculadora/observabilidade/simples-nacional/nao-assistido",
+    "timestamp": "<volatile>",
+    "errors": [
+      {
+        "type": "http://localhost/calculadora/observabilidade/simples-nacional/erros?codigo=VSN-034",
+        "title": "Número de itens não admitido pelo documento",
+        "code": "VSN-034",
+        "pointer": "#/itens",
+        "detail": "O documento 91 admite exatamente 1 item, recebidos 2."
+      }
+    ]
+  }
+}
